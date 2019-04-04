@@ -20,15 +20,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- code -->
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Nav 1 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Nav 2</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #e3f2fd;">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search lyrics & more">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+        </form>
+
+        <a class="navbar-brand" href="#">GENIUS</a>
+            
+        <div class="collapse navbar-collapse navbar-right" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SIGN UP <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SIGN IN</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <ul class="nav justify-content-center">
+        
+    </ul>
 </body>
 </html>
