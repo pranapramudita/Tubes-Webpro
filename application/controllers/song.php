@@ -8,6 +8,12 @@ class song extends CI_Controller(){
         $this->load->model('model_song');
     }
     
+    #account
+    public $data = array(
+        "fullname" => "Prana Pramudita Kusdiananggalih",
+        "username"=> "pranapramudita"
+    );
+
     #menu function
     public function menu(){
         $this->load->view('page_header');
@@ -26,7 +32,7 @@ class song extends CI_Controller(){
     }
 
     public function readsong(){
-        $data_song = $this->song->getAllSong();
+        $data_song = $this->model_song->read_song();
         $this->load->view('page_header');
         $this->load->view('page_song',['data'=>$data_song]);
         $this->load->view('page_footer');
@@ -37,7 +43,7 @@ class song extends CI_Controller(){
             // Judul, album, lirik, tahun, penulis pake b ing
 			"title" => $this->input->post('title', true),
         ];
-        $this->song->update_song($data['id_song',$data]);
+        $this->model_song->update_song($data['id_song'],$data);
         redirect('index.php/web/song','refresh');
     }
 
