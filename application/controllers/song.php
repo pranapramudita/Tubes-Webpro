@@ -4,7 +4,6 @@ class song extends CI_Controller{
     
     public function __construct()
     {
-        //coba push 3
         parent::__construct();
         $this->load->model('model_song');
     }
@@ -19,8 +18,7 @@ class song extends CI_Controller{
     public function menu(){
         $this->load->view('page_header');
         $this->load->view('page_menu');        
-        $this->load->view('page_footer');        
-        // coba lagi
+        $this->load->view('page_footer');
     }
 
     #song function
