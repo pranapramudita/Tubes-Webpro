@@ -20,6 +20,7 @@ class song extends CI_Controller{
         $this->load->view('page_header');
         $this->load->view('page_menu');        
         $this->load->view('page_footer');        
+        // coba lagi
     }
 
     #song function
