@@ -16,6 +16,7 @@ class song extends CI_Controller{
     #menu function
     public function menu(){
         $this->load->view('page_header');
+        $this->load->view('page_slider');
         $this->load->view('page_menu');        
         $this->load->view('page_footer');
     }
