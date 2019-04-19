@@ -35,6 +35,14 @@ class song extends CI_Controller{
     }
 
     #song function
+    public function song(){
+        $this->load->view('page_header');
+        $this->load->view('page_song');
+        $this->load->view('page_footer');
+    }
+    
+
+    #CRUD song function
     public function createsong(){
         $data = [
             // Judul, album, lirik, tahun, penulis pake b ing
