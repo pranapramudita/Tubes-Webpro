@@ -24,12 +24,14 @@ class song extends CI_Controller{
     public function search(){
         $this->load->view('page_header');
         $this->load->view('page_search');
+        $this->load->view('page_footer');
     }
     
     #word function
     public function word(){
         $this->load->view('page_header');
         $this->load->view('page_word');
+        $this->load->view('page_footer');
     }
 
     #song function
