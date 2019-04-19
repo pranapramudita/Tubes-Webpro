@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'song/home';
-$route['404_override'] = '';
+$route['404_override'] = 'song/error';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['header'] = 'song/head';
+$route['tubes-webpro/[a-z1]'] = 'song/word';

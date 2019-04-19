@@ -20,9 +20,15 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
-    #menu function
-    public function head(){
+    #coba function
+    public function coba(){
         $this->load->view('page_header');
+    }
+    
+    #word function
+    public function word(){
+        $this->load->view('page_header');
+        $this->load->view('page_word');
     }
 
     #song function

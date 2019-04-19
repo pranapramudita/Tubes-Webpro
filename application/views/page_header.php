@@ -33,33 +33,33 @@
             <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
             <li>
             <div class="btn-group text-center" role="group">
-            <a class="btn btn-menu" href="<?php echo base_url() ?>header">A</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/b.html">B</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/c.html">C</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/d.html">D</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/e.html">E</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/f.html">F</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/g.html">G</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/h.html">H</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/i.html">I</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/j.html">J</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/k.html">K</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/l.html">L</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/m.html">M</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/n.html">N</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/o.html">O</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/p.html">P</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/q.html">Q</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/r.html">R</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/s.html">S</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/t.html">T</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/u.html">U</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/v.html">V</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/w.html">W</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/x.html">X</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/y.html">Y</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/z.html">Z</a>
-            <a class="btn btn-menu" href="//www.azlyrics.com/19.html">#</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>a">A</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>b">B</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>c">C</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>d">D</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>e">E</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>f">F</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>g">G</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>h">H</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>i">I</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>j">J</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>k">K</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>l">L</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>m">M</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>n">N</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>o">O</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>p">P</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>q">Q</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>r">R</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>s">S</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>t">T</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>u">U</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>v">V</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>w">W</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>x">X</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>y">Y</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>z">Z</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>1">#</a>
             </div>
             </li>
             </ul>
