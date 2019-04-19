@@ -28,12 +28,12 @@
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse"><span class="glyphicon glyphicon-search"></span></button>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#artists-collapse"><span class="glyphicon glyphicon-th-list"></span></button>
-            <a class="navbar-brand" href="//www.azlyrics.com"><img alt="AZLyrics.com" class="pull-left" style="max-height:40px; margin-top:-10px;" src="//www.azlyrics.com/az_logo_tr.png"></a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img alt="AZLyrics.com" class="pull-left" style="max-height:40px; margin-top:-10px;" src="//www.azlyrics.com/az_logo_tr.png"></a>
             </div>
             <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
             <li>
             <div class="btn-group text-center" role="group">
-            <a class="btn btn-menu" href="//www.azlyrics.com/a.html">A</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>header">A</a>
             <a class="btn btn-menu" href="//www.azlyrics.com/b.html">B</a>
             <a class="btn btn-menu" href="//www.azlyrics.com/c.html">C</a>
             <a class="btn btn-menu" href="//www.azlyrics.com/d.html">D</a>

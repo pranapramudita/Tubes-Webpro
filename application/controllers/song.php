@@ -20,6 +20,11 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
+    #menu function
+    public function head(){
+        $this->load->view('page_header');
+    }
+
     #song function
     public function createsong(){
         $data = [
