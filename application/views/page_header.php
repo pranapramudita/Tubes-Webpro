@@ -78,5 +78,16 @@
             </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
         </nav>
+
+        <!-- top ban -->
+        <div class="lboard-wrap">
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-12 top-ad text-center">
+                <span id="cf_banner_top_nofc"></span>
+            </div>
+            </div>
+        </div>
+        </div>
     </body>
 </html>
