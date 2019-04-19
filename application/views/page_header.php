@@ -66,7 +66,7 @@
 
             <div class="collapse navbar-collapse" id="search-collapse">
 
-                <form class="navbar-form navbar-right search" method="get" action="//search.azlyrics.com/search.php" role="search">
+                <form class="navbar-form navbar-right search" method="get" action="<?php echo base_url() ?>search" role="search">
                 <div class="input-group">  
                 <input type="text" class="form-control" placeholder="" name="q" id="q">
                     <span class="input-group-btn">

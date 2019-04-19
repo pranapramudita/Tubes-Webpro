@@ -20,9 +20,10 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
-    #coba function
-    public function coba(){
+    #search function
+    public function search(){
         $this->load->view('page_header');
+        $this->load->view('page_search');
     }
     
     #word function
