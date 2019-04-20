@@ -70,6 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+//test
+
 $active_group = 'default';
 $query_builder = TRUE;
 
@@ -78,7 +80,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => '',
 	'password' => '',
-	'database' => '',
+	'database' => 'tubes_webpro',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
