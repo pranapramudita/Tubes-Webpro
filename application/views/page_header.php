@@ -12,7 +12,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/home.css"/>
+        <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/home.css"/>
     </head>
 
     <body>
