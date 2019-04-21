@@ -37,6 +37,13 @@ CREATE TABLE `song` (
   `image` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `contact` (
+  `name` varchar(500) NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `subject` varchar(500) NOT NULL,
+  `message` text NOT NULL,
+  `id_contact` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Dumping data for table `song`
 --
@@ -45,16 +52,10 @@ CREATE TABLE `song` (
 -- Table structure for table `contact`
 --
 
-CREATE TABLE `contact` (
-  `name` varchar(500) NOT NULL,
-  `email` varchar(500) NOT NULL,
-  `subject` varchar(500) NOT NULL,
-  `message` text NOT NULL,
-  `id_contact` int(11) NOT NULL,
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
--- Dumping data for table `song`
+-- Dumping data for table `contact`
 --
 
 INSERT INTO `song` (`title`, `artist`, `album`, `lyrics`, `id_song`, `image`) VALUES
