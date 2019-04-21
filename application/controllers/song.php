@@ -9,7 +9,6 @@ class song extends CI_Controller{
         $this->load->helper('form');
     }
     
-    //update db
     #account
     public $data = array(
         "fullname" => "Prana Pramudita Kusdiananggalih",
@@ -41,9 +40,9 @@ class song extends CI_Controller{
 
     #artist function
     public function artist(){
-        $data_artist = $this->model_song->GetArtist();
+        $data['song']= $this->model_song->GetArtist();
 		$this->load->view('page_header');
-		$this->load->view('page_artist',['data'=>$data_artist]);
+		$this->load->view('page_artist',$data);
         $this->load->view('page_footer');
     }
 
@@ -54,8 +53,8 @@ class song extends CI_Controller{
 		$this->load->view('page_listartist');
         $this->load->view('page_footer');
     }
-
-    #submit function
+    
+    #function submit lyrics
     public function submit(){
         $this->load->view('page_header');
         $this->load->view('page_submit');
@@ -72,8 +71,7 @@ class song extends CI_Controller{
             "image" => $this->input->post('userfile', true),
         ];
         $this->model_song->insert_lyrics($data);
-        $this->upload();
-        redirect('submit','refresh');
+        redirect('home','refresh');
     }
 
     #upload function

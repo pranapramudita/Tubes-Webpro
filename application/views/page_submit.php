@@ -13,6 +13,19 @@
     <div class="panel-body">
     <form id="submitLyrics" method="post" action="submit_save">
       <div class="form-group">
+        <label>You want to...</label>
+        <div class="radio">
+          <label class="radio-inline">
+            <input checked type="radio" id="what-add" name="what" value="added lyrics">
+            Submit Lyrics
+            </label>
+          <label class="radio-inline">
+            <input  type="radio" id="what-cor" name="what" value="corrected lyrics">
+            Correct Lyrics
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
         <label for="title">Song Title:</label>
         <input type="text" class="form-control" id="title" name="title" required>
         <small class="form-text text-danger"><?= form_error('title') ?></small>
