@@ -43,6 +43,7 @@
             <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
             <!-- end -->
             </div>
+            <?php } ?>
             <!-- end of song list -->
 
             <!-- <div class="ringtone">
@@ -54,6 +55,5 @@
     <!-- <div class="col-md-3 text-center hidden-sm hidden-xs">
     <div class="sky-ad"></div>
     </div> -->
-    <?php } ?>
     </div>
 </div>  <!-- container main-page -->
