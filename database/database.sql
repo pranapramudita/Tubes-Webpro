@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2019 at 07:39 AM
+-- Generation Time: Apr 21, 2019 at 09:29 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -25,41 +25,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `album`
---
-
-CREATE TABLE `album` (
-  `id_album` int(255) NOT NULL,
-  `id_artist` varchar(255) NOT NULL,
-  `id_song` varchar(255) NOT NULL,
-  `album_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `artist`
---
-
-CREATE TABLE `artist` (
-  `id_artist` int(255) NOT NULL,
-  `id_song` varchar(255) NOT NULL,
-  `id_album` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `song`
 --
 
 CREATE TABLE `song` (
-  `id_song` int(255) NOT NULL,
-  `id_artist` varchar(255) NOT NULL,
-  `id_album` varchar(255) NOT NULL,
-  `song_title` varchar(255) NOT NULL,
-  `lyrics` longtext NOT NULL
+  `song` varchar(500) NOT NULL,
+  `artist` varchar(500) NOT NULL,
+  `album` varchar(500) NOT NULL,
+  `title` varchar(500) NOT NULL,
+  `lyrics` text NOT NULL,
+  `id_song` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -67,52 +42,20 @@ CREATE TABLE `song` (
 --
 
 --
--- Indexes for table `album`
---
-ALTER TABLE `album`
-  ADD PRIMARY KEY (`id_album`),
-  ADD KEY `id_artist` (`id_artist`),
-  ADD KEY `id_song` (`id_song`);
-
---
--- Indexes for table `artist`
---
-ALTER TABLE `artist`
-  ADD PRIMARY KEY (`id_artist`),
-  ADD UNIQUE KEY `id_song` (`id_song`),
-  ADD KEY `id_song_2` (`id_song`),
-  ADD KEY `id_song_3` (`id_song`),
-  ADD KEY `id_album` (`id_album`);
-
---
 -- Indexes for table `song`
 --
 ALTER TABLE `song`
-  ADD PRIMARY KEY (`id_song`),
-  ADD KEY `id_artist` (`id_artist`),
-  ADD KEY `id_album` (`id_album`);
+  ADD PRIMARY KEY (`id_song`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `album`
---
-ALTER TABLE `album`
-  MODIFY `id_album` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `artist`
---
-ALTER TABLE `artist`
-  MODIFY `id_artist` int(255) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `song`
 --
 ALTER TABLE `song`
-  MODIFY `id_song` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_song` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
