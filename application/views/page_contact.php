@@ -5,7 +5,7 @@
             <div class="panel">
                 <div class="panel-heading">
                     <b>Filling out this form will send your message directly to AZLyrics.com team!</b><br>
-                    <small>If you want to submit/correct lyrics, please <a href="//www.azlyrics.com/add.php">click here</a></small>
+                    <small>If you want to submit/correct lyrics, please <a href="submit">click here</a></small>
                 </div>
                 <div class="panel-body">
                     <form action="//www.azlyrics.com/cgi-bin/contact.cgi" method="post">
