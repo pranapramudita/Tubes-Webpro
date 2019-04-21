@@ -70,13 +70,13 @@ class song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
-            "id_song" => $this->input->post('song', true),
-            "id_artist" => $this->input->post('artist', true),
-            "id_album" => $this->input->post('album', true),
+            "name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
             "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->model_song->insert_lyrics($data);
+        redirect('submit','refresh');
     }
     
 
