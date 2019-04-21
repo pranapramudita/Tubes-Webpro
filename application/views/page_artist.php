@@ -34,7 +34,7 @@
             <!-- Perulangan list album -->
             <!-- <?php 
             $i = 1;
-            foreach ($data as $d) { ?>        -->
+            foreach ($song as $row) { ?>        -->
                 <!-- <?php echo $d['title'];?> -->
                 <!-- <?php echo $d['artist'];?> -->
                 <!-- <?php echo $d['album']?> --> 
