@@ -32,10 +32,12 @@
             <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a><a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
 
             <!-- Perulangan list album -->
-            <!-- <?php foreach ($data as $d) { ?>        -->
+            <!-- <?php 
+            $i = 1;
+            foreach ($data as $d) { ?>        -->
                 <!-- <?php echo $d['title'];?> -->
                 <!-- <?php echo $d['artist'];?> -->
-                <!-- <?php echo $d['album']?> --> }
+                <!-- <?php echo $d['album']?> --> 
             <div id="" class="">album: <b>""</b> </div>
             <!-- Perulangan list lagu -->
             <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
@@ -52,5 +54,6 @@
     <!-- <div class="col-md-3 text-center hidden-sm hidden-xs">
     <div class="sky-ad"></div>
     </div> -->
+    <?php } ?>
     </div>
 </div>  <!-- container main-page -->
