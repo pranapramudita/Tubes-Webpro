@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2019 at 11:58 AM
+-- Generation Time: Apr 21, 2019 at 03:27 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -25,6 +25,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `name` varchar(500) NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `subject` varchar(500) NOT NULL,
+  `message` text NOT NULL,
+  `id_contact` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `song`
 --
 
@@ -37,30 +51,12 @@ CREATE TABLE `song` (
   `image` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `contact` (
-  `name` varchar(500) NOT NULL,
-  `email` varchar(500) NOT NULL,
-  `subject` varchar(500) NOT NULL,
-  `message` text NOT NULL,
-  `id_contact` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Dumping data for table `song`
 --
 
---
--- Table structure for table `contact`
---
-
-
-
---
--- Dumping data for table `contact`
---
-
 INSERT INTO `song` (`title`, `artist`, `album`, `lyrics`, `id_song`, `image`) VALUES
 ('Sinner', 'Aaron Lewis', 'Sinner', 'So I sit here,\r\nIn my hole,\r\nHope the lord can,\r\nCome save my soul.\r\n\r\nCause I\'m a sinner to my core,\r\nI ask forgiveness and nothing more.\r\n\r\nDarkness surrounds me,\r\nI can\'t see,\r\nAll of the demons,\r\nRight here with me.\r\n\r\nCause I\'m a sinner to my core.\r\nI ask forgiveness and nothing more.\r\n\r\nMy eyes are open,\r\nNow I can see,\r\nAll of the damage,\r\nBrought on by me.\r\n\r\nCause I\'m a sinner to my core,\r\nI ask forgiveness and nothing more.\r\n\r\nI\'m a sinner to my core,\r\nI ask forgiveness and nothing more.', 2, '65471.jpg'),
-('That Ain\'t Country', 'Aaron Lewis', 'Sinner', 'What a sad state of affairs I\'m in\r\nCause I\'m trying to compete where I just don\'t fit in\r\nCause the country, if you call it that, from off the road\r\nAin\'t country just because I\'m old enough to know that\r\n\r\nThat ain\'t country\r\nThat\'s a natural fact\r\nIt\'s full of tails of good times and happy endings\r\nMy life ain\'t like that\r\nSo I\'ll keep listening to the old songs that my Grandad used to play\r\nFull of pain and heartache and desperation and the ones that got away\r\nThe ones that speak to me, the way I feel today\r\n\r\nSo tell me, whatever happened to the country songs\r\nFull of truth and consequences, all the things gone wrong\r\nSomeone came and changed it up, made it all a lie\r\nI\'d like to spit a little beach-nut right in that dude\'s eye\r\n\r\nCause that ain\'t country\r\nThat\'s a natural fact\r\nIt\'s full of tails of good times and happy endings\r\nMy life ain\'t like that\r\nSo I\'ll keep listening to the old songs that my Grandad used to play\r\nFull of pain and heartache and desperation and the ones that got away\r\nThe ones that speak to me, the way I feel today\r\n\r\nNow listen here\r\nWe got Waylon singing songs bout a Ramblin\' Man\r\nAnd Junior\'s got a cold one in his hand\r\nAnd the Possum\'s gettin drunk again imagine that\r\nAnd Charlie Daniels playing fiddle underneath that hat\r\nAnd John and June are goin\' back and forth again\r\nAnd David Allan Coe is singing \'bout his kin\r\nAnd Haggard sings the songs that\'ll save your soul\r\nAnd Willie sings the songs about the hearts he stole\r\n\r\nCause that shit\'s country\r\nThat\'s a natural fact\r\nIt\'s full of tails of hard times and complications\r\nAin\'t life like that?\r\nSo I\'ll keep listening to the old songs that my Grandad used to play\r\nFull of pain and heartache and desperation and the ones that got away\r\nThe ones that speak to me, the way I feel today\r\nThe ones that speak to me\r\nThe way I feel today', 3, '65471.jpg'),
 ('Come Home', 'Anderson .Paak', 'Ventura', 'Ooh, ooh-ooh-ooh, ah-ah...\r\n\r\n[Anderson .Paak:]\r\nDarlin\', I have to be moved from afar\r\nThe truth is the only thing worth holdin\' onto anymore (Anymore)\r\nUntie me, let me loose from the cord\r\nI\'m so gone, so far, I deserve more (More, I deserve more)\r\nYeah\r\n\r\nI\'m beggin\' you (I beg)\r\nI\'m beggin\' you, please, come home (Please)\r\nNo one even begs anymore (Come home)\r\nI\'m beggin\' you (I beg)\r\nI\'m beggin\' you, please, come home (Please)\r\nNo one even begs anymore (Come home)\r\n\r\nOoh, ooh-ooh-ooh, ah-ah...\r\n\r\nWho should I rest blame upon\r\nWhen all of the signs are brightly drawn\r\nAnd point back to your open arms? (Point back to your open arms)\r\nBack too soon, but I\'m here for the last of support\r\nNo longer bound by a broken heart (Bound by a broken heart)\r\n\r\nI\'m beggin\' you (I beg)\r\nI\'m beggin\' you, please, come home (Please)\r\nNo one even begs anymore (Come home)\r\nI\'m beggin\' you (I beg)\r\nI\'m beggin\' you, please, come home (Please)\r\nNo one even begs anymore (Come home)\r\n\r\nOoh, ooh-ooh-ooh, ah-ah...\r\n\r\nSomewhere in a plane over water\r\nMy love, my love\r\nHome base, wifey turn it off before I touch down\r\n\r\n[André 3000:]\r\nYou\'re all I need, all of me on my knees\r\nNormally harmony, bumblebee, hummingbird\r\nI\'m a nerd, study you\r\nWhat are you, WWF?\r\nWe fightin\', we might need counseling\r\nPossibly moreso me\r\nSounds to me frowns\'ll be grounds to leave\r\nHounds\'ll be lookin\' for you before you drop a tear, apres diem\r\nStop pretending that I ain\'t him\r\nI ain\'t them, dim sum dumpling\r\nI remember when you start dying them silver hairs\r\nAnd start hiding from your age\r\nI ask, \"Why? How come?\"\r\nAmazin\' how time can run away from us\r\nI\'m no nun, you\'re no priest\r\nBut I promise, hun, you gon\' see a phenomenon\r\nCome with me like it\'s Ramadan\r\nI don\'t eat like it\'s Comic Con\r\nI\'m a freak for you (Yeah!)\r\nI\'m begging now, pretty please with cherries on top\r\nHairy wet twat\r\nHarriet Tub-man, I don\'t give up\r\nAnd if your gut tells you to strut, then strut\r\nThen I\'ll hail you a car, but what man won\'t beg?\r\nYou know I\'m nutmeg\r\nI will show up on a lil\' moped\r\nWith a lil\' puppy, it\'ll be fluffy\r\nYou will un-toughen, we can discuss it\r\nYou know I\'m sufferin\', I do miss my friend\r\nI don\'t like my fin bent up, Tilikum, well, that\'s ill-informed\r\nSweet stuff, Willa Wonk, we stuck, Billabong\r\n\'Least at minumum we gon\' get along\r\nPeace and inner calm, geez, it\'s been a long\r\nT-I-M-E, um, please, I\'m feelin\' dumb\r\nPlease, I\'m feelin\' dumb\r\nPlease, I\'m feelin\' dumb\r\n\r\nOoh, ooh-ooh-ooh, ah-ah... ', 5, '66595.jpg'),
 ('Make It Right', 'BTS', 'MAP OF THE SOUL: PERSONA', '[Romanized:]\r\n\r\nNaega nal nunchichaessdeon sungan\r\nTteonayaman haess-eo\r\nNan chaj-anaeya haess-eo\r\nAll day all night\r\n\r\nSamaggwa badadeul-eul geonneo\r\nNeolbgo neolb-eun segyeleul\r\nHemaeeo danyeoss-eo\r\nBaby I\r\n\r\nI could make it better\r\nI could hold you tighter\r\nGeu meon gil wieseo\r\nOh, you’re the light\r\n\r\nChodaebadji moshan\r\nHwan-yeongbadji moshan\r\nNaleul al-ajwossdeon dan han salam\r\n\r\nKkeutdo boiji anhdeon yeong-won-ui bam\r\nNaege achim-eul seonmulhan geon neoya\r\nIje geu son naega jab-ado doelkka\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nI sesang sog-e yeong-ung-i doen na\r\nNaleul chajneun keun hwanhowa\r\nNae son, teulopiwa geumbich maikeu\r\nAll day, everywhere\r\nBut modeun ge neoege dahgi wiham-in geol\r\nNae yeojeong-ui dab-in geol\r\nNeol chajgi wihae nolaehae\r\nBaby to you\r\n\r\nJeonboda jogeum deo keojin kie\r\nJom deo dandanhaejin mogsolie\r\nModeun geon nege dol-agagi wihae\r\nIje neolaneun jidoleul hwaljjag pyeolchilge\r\nMy rehab\r\nNal bwa wae mos al-abwa\r\nNamdeul-ui auseong ttawi na deudgo sipji anh-a\r\nNeoui hyang-gineun yeojeonhi naleul kkwettulh-eo muneotteulyeo\r\nDoedol-agaja geuttaelo\r\n\r\nBaby I know\r\nI can make it better\r\nI can hold you tighter\r\nGeu modeun gil-eun neol\r\nHyanghan geoya\r\n\r\nDa soyong-eobs-eoss-eo\r\nNeo anin daleun geon\r\nGeuttaecheoleom nal eolumanjyeojwo\r\n\r\nKkeutdo boiji anhdeon yeong-won-ui bam\r\nNaege achim-eul seonmulhan geon neoya\r\nIje geu son naega jab-ado doelkka\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nYeojeonhi aleumdaun neo\r\nGeunal-ui geuttaecheoleom mal-eobs-i geunyang nal an-ajwo\r\nJiog-eseo naega sal-a nam-eun geon\r\nNal wihaessdeon ge anin doelyeo neoleul wihan geolan geol\r\nAndamyeon jujeo malgo please save my life\r\nNeo eobs-i hechyeowassdeon samag wineun mogmalla\r\nGeuleoni eoseo ppalli nal jab-ajwo\r\nNeo eobsneun badaneun gyeolgug samaggwa gat-eul geolan geol al-a\r\n\r\nAll right\r\nI can make it better\r\nI can hold you tighter\r\nOh, I can make it right\r\n\r\nDa soyong-eobs-eoss-eo\r\nNeo anin daleun geon\r\nOh, I can make it right\r\n\r\nAlright\r\nAlright\r\nOh, I can make it right\r\n\r\n[Korean:]\r\n\r\n?? ? ???? ??\r\n???? ??\r\n? ???? ??\r\nAll day all night\r\n\r\n??? ???? ??\r\n?? ?? ???\r\n??? ???\r\nBaby I\r\n\r\nI could make it better\r\nI could hold you tighter\r\n? ? ? ???\r\nOh, you’re the light\r\n\r\n???? ??\r\n???? ??\r\n?? ???? ? ? ??\r\n\r\n?? ??? ?? ??? ?\r\n?? ??? ??? ? ??\r\n?? ? ? ?? ??? ??\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\n? ?? ?? ??? ? ?\r\n?? ?? ? ???\r\n? ?, ???? ?? ???\r\nAll day, everywhere\r\nBut ?? ? ??? ?? ??? ?\r\n? ??? ?? ?\r\n? ?? ?? ???\r\nBaby to you\r\n\r\n??? ?? ? ?? ??\r\n? ? ???? ????\r\n?? ? ?? ???? ??\r\n?? ??? ??? ?? ???\r\nMy rehab\r\n? ? ? ? ???\r\n??? ??? ?? ? ?? ?? ??\r\n?? ??? ??? ?? ??? ????\r\n????? ???\r\n\r\nBaby I know\r\nI can make it better\r\nI can hold you tighter\r\n? ?? ?? ?\r\n?? ??\r\n\r\n? ?????\r\n? ?? ?? ?\r\n???? ? ?????\r\n\r\n?? ??? ?? ??? ?\r\n?? ??? ??? ? ??\r\n?? ? ? ?? ??? ??\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\n??? ???? ?\r\n??? ???? ??? ?? ? ???\r\n???? ?? ?? ?? ?\r\n? ??? ? ?? ?? ?? ?? ?? ?\r\n??? ?? ?? please save my life\r\n? ?? ???? ?? ?? ???\r\n??? ?? ?? ? ???\r\n? ?? ??? ?? ??? ?? ?? ? ??\r\n\r\nAll right\r\nI can make it better\r\nI can hold you tighter\r\nOh, I can make it right\r\n\r\n? ?????\r\n? ?? ?? ?\r\nOh, I can make it right\r\n\r\nAlright\r\nAlright\r\nOh, I can make it right\r\n\r\n[English translation:]\r\n\r\nThe moment I noticed myself\r\nI had to leave\r\nI had to find out\r\nAll day all night\r\n\r\nAcross the desert and the sea\r\nThis wide, wide world\r\nI was wandering\r\nBaby I\r\n\r\nI could make it better\r\nI could hold you tighter\r\nOn that long road\r\nOh, you\'re the light\r\n\r\nUninvited\r\nUnwelcome\r\nThe only one who recognized me\r\n\r\nThis eternal night with no end in sight\r\nIt\'s you who gifted me the morning\r\nNow it it ok if I can hold that hand?\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nI became a hero in this world\r\nThe loud screams that seek me out\r\nMy hand, trophy and a gold microphone\r\nAll day, everywhere\r\nBut all of this is about reaching you\r\nIt\'s the answer to my journey\r\nI\'m singing to find you\r\nBaby to you\r\n\r\nA little taller than I was before\r\nWith a voice a little more solid\r\nAll of this to go back to you\r\nNow I\'ll spread wide a map called you\r\nMy rehab\r\nLook at me, why can\'t you recognize me?\r\nI don\'t want to hear other people\'s noises\r\nYour fragrance still penetrates and breaks me down\r\nLet\'s go back to that time\r\n\r\nBaby I know\r\nI can make it better\r\nI can hold you tighter\r\nAll those roads\r\nAre pointing to you\r\n\r\nEverything was useless\r\nAnything other than you\r\nJust touch me like that time\r\n\r\nThis eternal night with no end in sight\r\nIt\'s you who gifted me the morning\r\nNow it it ok if I can hold that hand?\r\nOh, oh\r\nI can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nAll right\r\nAll right\r\nOh, I can make it right\r\n\r\nYou are still beautiful\r\nJust hold me silently like you did that day, that time\r\nThe reason I survived in hell\r\nIt\'s for you, it was not for me\r\nIf you know, don\'t hesitate and please save my life\r\nI\'m thirsty wandering this desert without you\r\nSo hurry and grab me quickly\r\nI know the sea without you is the same as a desert\r\n\r\nAll right\r\nI can make it better\r\nI can hold you tighter\r\nOh, I can make it right\r\n\r\nEverything was useless\r\nAnything other than you\r\nOh, I can make it right\r\n\r\nAlright\r\nAlright\r\nOh, I can make it right', 6, '67033.jpg'),
 ('Rolex', 'Capital Bra', 'CB6', '[Capital Bra:]\r\nBa-ba-bam-bam, ba-ba-bam\r\nBa-bam, ba-ba-bam-bam, ba-ba-bam\r\nUff!\r\n\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (ba-ba-bam-bam)\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (Bra)\r\n\r\nIch zieh\' Flex im RS6, bin hellwach\r\nDraußen wird es hell grad, ich hol\' mir noch ein\'n Haze-Blunt\r\nDer Stern glänzt am Lenkrad\r\nMakarow aus Belgrad, ich zieh\' sie aus der Belstaff\r\nAhh, Bratan, fick die Kritiker\r\nIch will Gucci, Louis, aber Hilfiger ist billiger (ah)\r\nPara machen illegal, treff\' mich mit Verehrerinn\'n (ja)\r\nIch hab\' Sex mit mehreren Lehrerinn\'n (na na na)\r\nIch muss Para machen (uff), Dinger für Para dreh\'n (ja)\r\nUnsre Welten sind verschieden, parallel (le le le le)\r\nBitches steh\'n auf Para (Para)\r\nUnd ich steh\' auf Bitches, die auf Para steh\'n (na na na, ba-ba-bam-bam)\r\n\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (ba-ba-bam-bam)\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin\r\n\r\n[KC Rebell:]\r\nCash rules everything around me (alles)\r\nBündel in der Tasche wie ein Saudi (oh)\r\nAn der Hand vier Ringe wie bei Audi (ey-ey-yeah)\r\nIch bin grad essen für \'n Taui (wer?)\r\nSteige vom Lambo Diablo um in den Murciélago\r\nEs sind Capital, Summer, KC – Bruder, was da los? (ja)\r\nWir ballen wie Ancelotti (ey), hab\'n keine andern Hobbys (nein)\r\nGib uns die Flasche Woddi (hey), wir nehm\'n euch alle doggy (ja)\r\nDie Day-Date fühlt sich auf jeden Fall krass an (ohh)\r\nWir sind gewaschen mit allen Wassern (oh-ohh)\r\nCash in mei\'m Wandschrank wie Frédéric von Anhalt (yeah)\r\nDie Bitch will, aber ist lesh, so wie Harald\r\n\r\n[Capital Bra:]\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (ba-ba-bam-bam)\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin\r\n\r\n[Summer Cem:]\r\nEine Roli in der Farbe einer Pepsi (yeah-yeah)\r\nMeine momentane Lage ist zu sexy (ahh)\r\nMit KC Rebell und mit Capi heut auf Tagteam (huh)\r\nIn meiner Wohnung, wo ein Stapel voller Schecks liegt (ja)\r\nIch bin wie immer nur am Block, hängen nachts ab (ey)\r\nBullen nehmen einen hops hier in Gladbach (yeah)\r\nKafa wieder mal auf Ot, immer paff-paff (uh)\r\nDanke Gott, dass ich es trotzdem geschafft hab\'\r\nWir bleiben bei Melemen, freestylen bei JAM FM\r\nAuf Festivals mit einer Scharfen durch die Menge renn\'n (drrt)\r\nIn der Präsi-Suite oder wieder auf Zelle penn\'n\r\nDas ist kein frischer Wind, das ist ein Hurrikan (jaja)\r\n\r\n[Capital Bra:]\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (ba-ba-bam-bam)\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin\r\n\r\nJajajaja, was geht ab, Bratans, Bratinas und Bratuhas?\r\nKC Rebell, Summer Cem, Capital\r\nWir machen\'s immer, immer wieder, Digga, du weißt Bescheid\r\nBerlin lebt, Gladbach lebt, Stuttgart lebt, brra-rrah-rrah-rrah\r\n\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin (ba-ba-bam-bam)\r\nBra, wir tragen Rolex Original (Original)\r\nMhm, hajde, Bratan, bring mir Tilidin (Tilidin)\r\nViel zu viele wollen, dass wir fall\'n (viel zu viele, Bra)\r\nMhm, ja, Kolleg, willkommen in Berlin\r\n\r\nBa-ba-bam-bam, ba-ba-bam-bam\r\nBa-ba-bam-bam, ba-ba-bam-bam\r\nBa-ba-bam-bam, ba-ba-bam-bam\r\nBa-ba-ba-ba-bam, ba-ba-bam\r\nBam-bam, haha ', 7, '67484.jpg'),
@@ -82,30 +78,32 @@ INSERT INTO `song` (`title`, `artist`, `album`, `lyrics`, `id_song`, `image`) VA
 --
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id_contact`);
+
+--
 -- Indexes for table `song`
 --
 ALTER TABLE `song`
   ADD PRIMARY KEY (`id_song`);
 
--- Indexes for table `contact`
---
-ALTER TABLE `contact`
-  ADD PRIMARY KEY (`id_contact`);
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `song`
 --
 ALTER TABLE `song`
   MODIFY `id_song` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-COMMIT;
-
--- AUTO_INCREMENT for table `contact`
---
-ALTER TABLE `contact`
-  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
