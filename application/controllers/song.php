@@ -48,6 +48,34 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
+    #contact function
+    public function contact(){
+        $this->load->view('page_header');
+        $this->load->view('page_contact');
+        $this->load->view('page_footer');
+    }
+
+    #adv function
+    public function adv(){
+        $this->load->view('page_header');
+        $this->load->view('page_adv');
+        $this->load->view('page_footer');
+    }
+
+    #privacy function
+    public function privacy(){
+        $this->load->view('page_header');
+        $this->load->view('page_privacy');
+        $this->load->view('page_footer');
+    }
+
+    #copyright function
+    public function copyright(){
+        $this->load->view('page_header');
+        $this->load->view('page_copyright');
+        $this->load->view('page_footer');
+    }
+
     #error function
     public function error(){
         $this->load->view('page_error');

@@ -57,3 +57,7 @@ $route['tubes-webpro/[a-z1]'] = 'song/word';
 $route['tubes-webpro/[a-z1]/song'] = 'song/song';
 $route['tubes-webpro/search'] = 'song/search';
 $route['tubes-webpro/submit'] = 'song/lyrics';
+$route['tubes-webpro/contact'] = 'song/contact';
+$route['tubes-webpro/adv'] = 'song/adv';
+$route['tubes-webpro/privacy'] = 'song/privacy';
+$route['tubes-webpro/copyright'] = 'song/copyright';

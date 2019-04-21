@@ -5,7 +5,7 @@
             <li><a href="<?php echo base_url() ?>submit">Submit Lyrics</a></li>
             <li><a href="#">Soundtracks</a></li>
             <li><a href="#">Facebook</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="<?php echo base_url() ?>contact">Contact Us</a></li>
          </ul>
           </div> 
         </nav>
@@ -25,9 +25,9 @@
 <nav class="navbar navbar-footer">
           <div class="container text-center">
           <ul class="nav navbar-nav navbar-center">
-            <li><a href="#">Advertise Here</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">DMCA Policy</a></li>
+            <li><a href="<?php echo base_url() ?>adv">Advertise Here</a></li>
+            <li><a href="<?php echo base_url() ?>privacy">Privacy Policy</a></li>
+            <li><a href="<?php echo base_url() ?>copyright">DMCA Policy</a></li>
           </ul>
           </div> 
      </nav>

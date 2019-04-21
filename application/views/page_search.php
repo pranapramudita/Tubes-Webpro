@@ -6,13 +6,13 @@ search<div class="container main-page">
                 <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
                 <table class="table table-condensed">
                     
-                    
+            <!-- Perulangan Database -->        
             <tr>
                 <td class="text-left visitedlyr">
                     1. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b>Joji</b></a>
                 </td>
             </tr>
-            
+            <!-- end -->
                     
                 </table>
             </div>
@@ -21,14 +21,15 @@ search<div class="container main-page">
                 <div class="panel-heading"><b>Song results:</b><br><small>[1-5 of 56 total <span class="text-lowercase">Songs</span> found]</small></div>
                 <table class="table table-condensed">
                     
-                    
+            <!-- Perulangan Database -->
             <tr>
                 <td class="text-left visitedlyr">
                     1. <a href="https://www.azlyrics.com/lyrics/joji/rip.html" target="_blank"><b>R.I.P.</b></a>  by <b>Joji</b><br>
                     <small>[<strong>Joji</strong>:] There's no more time Just lay it on me If I lost my life You can blame it on me Are you ready or not? We can start right here Take you on them rocks So crystal clear Oh, oh, oh Are they talkin' 'bout us? Are they talkin' 'bout us? (Yeah) Yeah,...</small>
                 </td>
             </tr>
-                
+            <!-- end -->
+
             <tr>
                 <td>
                     <a class="btn btn-share" href="more">More Song Results</a>
