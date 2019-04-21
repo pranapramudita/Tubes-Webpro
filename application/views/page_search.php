@@ -54,9 +54,9 @@
                     
             <!-- Perulangan Database -->
             <tr>
-                <td class="text-left visitedlyr">
-                    1. <a href="https://www.azlyrics.com/lyrics/joji/rip.html" target="_blank"><b>R.I.P.</b></a>  by <b>Joji</b><br>
-                    <small>[<strong>Joji</strong>:] There's no more time Just lay it on me If I lost my life You can blame it on me Are you ready or not? We can start right here Take you on them rocks So crystal clear Oh, oh, oh Are they talkin' 'bout us? Are they talkin' 'bout us? (Yeah) Yeah,...</small>
+            <td class="text-left visitedlyr">
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['title'];
+ ?></b></a>
                 </td>
             </tr>
             <!-- end -->
