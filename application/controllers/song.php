@@ -8,7 +8,7 @@ class song extends CI_Controller{
         $this->load->library('form_validation');
     }
     
-    
+    //update db
     #account
     public $data = array(
         "fullname" => "Prana Pramudita Kusdiananggalih",
