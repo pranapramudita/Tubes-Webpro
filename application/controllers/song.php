@@ -144,7 +144,6 @@ class song extends CI_Controller{
         redirect('index.php/web/song','refresh');
     }
 
-    
 }
 
 ?>
