@@ -1,11 +1,12 @@
 <?php
 
-class song extends CI_Controller{ 
+class song extends CI_Controller{
     public function __construct()
     {
         parent::__construct();
         $this->load->model('model_song');
     }
+    
     
     #account
     public $data = array(
@@ -57,7 +58,7 @@ class song extends CI_Controller{
             'album' => $album,
             'source' => $source,
             'lyrics' => $lyrics,
-		);
+        );
         $this->model_song->insert_lyrics($data);
         $this->load->view('page_header');
         $this->load->view('page_submit');

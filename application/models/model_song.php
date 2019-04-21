@@ -33,7 +33,6 @@ class model_song extends CI_Model{
     
     public function insert_lyrics($data){
         $this->db->insert('song',$data);
-	    return;
     }
 }
 ?>
