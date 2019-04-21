@@ -66,7 +66,7 @@
 
             <div class="collapse navbar-collapse" id="search-collapse">
 
-            <form class="navbar-form navbar-right search" method="post" action="<?php echo site_url('song/search') ?>">
+            <form class="navbar-form navbar-right search" method="post" action="<?php echo site_url('search') ?>">
                 <div class="input-group">  
                 <input type="text" class="form-control" placeholder="" name="keyword" id="q">
                     <span class="input-group-btn">
