@@ -41,7 +41,12 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
     
-
+    #lyrics function
+    public function lyrics(){
+        $this->load->view('page_header');
+        $this->load->view('page_submit');
+        $this->load->view('page_footer');
+    }
     #CRUD song function
     public function createsong(){
         $data = [
