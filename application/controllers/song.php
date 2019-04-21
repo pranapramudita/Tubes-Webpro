@@ -45,7 +45,7 @@ class song extends CI_Controller{
     }
     
     #lyrics function
-    public function lyrics(){
+    public function submit(){
         // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
         // $this->model_song->insert_lyrics($data);
     //     $this->form_validation->set_rules('id_song','name','required');
@@ -63,6 +63,19 @@ class song extends CI_Controller{
         $this->load->view('page_submit');
         $this->load->view('page_footer');
     }
+    
+    #submit_save function
+    public function submit_save(){
+        $data = [
+            "id_song" => $this->input->post('song', true),
+            "id_artist" => $this->input->post('artist', true),
+            "id_album" => $this->input->post('album', true),
+            "song_title" => $this->input->post('title', true),
+            "lyrics" => $this->input->post('lyrics', true),
+        ];
+        $this->model_song->insert_lyrics($data);
+    }
+    
 
     #contact function
     public function contact(){

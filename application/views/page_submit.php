@@ -11,7 +11,7 @@
 
     <div class="panel">
     <div class="panel-body">
-    <form id="submitLyrics" method="post" action="song/lyrics">
+    <form id="submitLyrics" method="post" action="submit_save">
       <!-- <input type="hidden" name="song_id" value="null">
       <input type="hidden" name="artist_id" id="artist_id" value="null">
       <div class="form-group">
@@ -65,25 +65,21 @@
       </div>
       <div class="alert" id="resultBlock" style="display: none"></div> -->
       <div class="form-group">
-        <label for="name">name</label>
-        <input type="text" class="form-control" id="name" name="name">
-        <small class="form-text text-danger"><?= form_error('name') ?>.</small>
+        <label for="song">song</label>
+        <input type="text" class="form-control" id="song" name="song">
+        <small class="form-text text-danger"><?= form_error('song') ?>.</small>
       </div><div class="form-group">
         <label for="artist">artist</label>
         <input type="text" class="form-control" id="artist" name="artist">
         <small class="form-text text-danger"><?= form_error('artist') ?>.</small>
       </div><div class="form-group">
-        <label for="song">song</label>
-        <input type="text" class="form-control" id="song" name="song">
-        <small class="form-text text-danger"><?= form_error('song') ?>.</small>
-      </div><div class="form-group">
         <label for="album">album</label>
         <input type="text" class="form-control" id="album" name="album">
         <small class="form-text text-danger"><?= form_error('album') ?>.</small>
       </div><div class="form-group">
-        <label for="source">source</label>
-        <input type="text" class="form-control" id="source" name="source">
-        <small class="form-text text-danger"><?= form_error('source') ?>.</small>
+        <label for="title">title</label>
+        <input type="text" class="form-control" id="title" name="title">
+        <small class="form-text text-danger"><?= form_error('title') ?>.</small>
       </div><div class="form-group">
         <label for="lyrics">Lyrics:</label>
         <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;"></textarea>
