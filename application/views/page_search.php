@@ -1,7 +1,7 @@
 <div class="container main-page">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 20px;">
-        <?php if($artist != false){?>
+        <?php if($song != false){?>
             <div class="panel">
                 <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
                
