@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 20 Apr 2019 pada 11.31
--- Versi Server: 10.1.13-MariaDB
--- PHP Version: 7.0.8
+-- Generation Time: Apr 21, 2019 at 07:39 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,11 +25,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `album`
+-- Table structure for table `album`
 --
 
 CREATE TABLE `album` (
-  `id_album` varchar(255) NOT NULL,
+  `id_album` int(255) NOT NULL,
   `id_artist` varchar(255) NOT NULL,
   `id_song` varchar(255) NOT NULL,
   `album_name` varchar(255) NOT NULL
@@ -36,11 +38,11 @@ CREATE TABLE `album` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `artist`
+-- Table structure for table `artist`
 --
 
 CREATE TABLE `artist` (
-  `id_artist` varchar(255) NOT NULL,
+  `id_artist` int(255) NOT NULL,
   `id_song` varchar(255) NOT NULL,
   `id_album` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL
@@ -49,15 +51,14 @@ CREATE TABLE `artist` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `song`
+-- Table structure for table `song`
 --
 
 CREATE TABLE `song` (
-  `id_song` varchar(255) NOT NULL,
+  `id_song` int(255) NOT NULL,
   `id_artist` varchar(255) NOT NULL,
   `id_album` varchar(255) NOT NULL,
   `song_title` varchar(255) NOT NULL,
-  `producer` varchar(255) NOT NULL,
   `lyrics` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -90,6 +91,29 @@ ALTER TABLE `song`
   ADD PRIMARY KEY (`id_song`),
   ADD KEY `id_artist` (`id_artist`),
   ADD KEY `id_album` (`id_album`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `album`
+--
+ALTER TABLE `album`
+  MODIFY `id_album` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `artist`
+--
+ALTER TABLE `artist`
+  MODIFY `id_artist` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `song`
+--
+ALTER TABLE `song`
+  MODIFY `id_song` int(255) NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
