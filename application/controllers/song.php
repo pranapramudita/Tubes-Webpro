@@ -6,9 +6,9 @@ class song extends CI_Controller{
         parent::__construct();
         $this->load->model('model_song');
         $this->load->library('form_validation');
-        $this->load->helper('form');
     }
     
+    //update db
     #account
     public $data = array(
         "fullname" => "Prana Pramudita Kusdiananggalih",
@@ -46,16 +46,29 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
-    #listartist function
+    #artist function
     public function listartist(){
-    //     $data_artist = $this->model_song->GetArtist();
+    //     $data['song'] = $this->model_song->GetArtist();
 		$this->load->view('page_header');
 		$this->load->view('page_listartist');
         $this->load->view('page_footer');
     }
     
-    #function submit lyrics
+    #lyrics function
     public function submit(){
+        // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
+        // $this->model_song->insert_lyrics($data);
+    //     $this->form_validation->set_rules('id_song','name','required');
+    //     if($this->form_validation->run() == false){
+    //         $this->load->view('page_header');
+    //         $this->load->view('page_submit');
+    //         $this->load->view('page_footer');
+    //     }
+    //     else{
+    //         $this->model_song->insert_lyrics();
+    //         $this->session->set_flashdata('msg', ' added success');
+    //         redirect('home','refresh');
+    //     }
         $this->load->view('page_header');
         $this->load->view('page_submit');
         $this->load->view('page_footer');
@@ -64,37 +77,15 @@ class song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
-            "title" => $this->input->post('title', true),
-            "artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
+            "name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
-            "image" => $this->input->post('userfile', true),
         ];
-        if (isset($_GET['what-cor'])){
-            $this->model_song->update_lyrics($data);
-        } else{
-            $this->model_song->insert_lyrics($data);
-        }
-        redirect('home','refresh');
+        $this->model_song->insert_lyrics($data);
+        redirect('submit','refresh');
     }
-
-    #upload function
-    public function upload(){
-        $config['upload_path'] = './assets/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size']  = '4096';
-        $config['max_width']  = '1920';
-        $config['max_height']  = '1080';
-        
-        $this->load->library('upload', $config);
-        
-        if (!$this->upload->do_upload()){
-            $error = array('error' => $this->upload->display_errors());
-        }
-        else{
-            $data = array('upload_data' => $this->upload->data());
-        }
-    }
+    
 
     #contact function
     public function contact(){

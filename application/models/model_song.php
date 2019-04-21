@@ -26,7 +26,7 @@ class model_song extends CI_Model{
 		$this->db->select('album','title','artist','lyrics');
 		$this->db->from('song');
 		$query = $this->db->get();
-		return $query->result();
+		return $query->result_array();
     }
 
     public function getSong(){
