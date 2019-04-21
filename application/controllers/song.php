@@ -51,8 +51,8 @@ class song extends CI_Controller{
         $source = $this->input->post('source');
         $lyrics = $this->input->post('lyrics');
 		$data = array(
-			'name' => $nim,
-			'artist' => $nama,
+			'name' => $name,
+			'artist' => $artist,
 			'song' => $song,
             'album' => $album,
             'source' => $source,
