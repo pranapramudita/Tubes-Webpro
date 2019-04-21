@@ -17,8 +17,9 @@ class song extends CI_Controller{
 
     #menu function
     public function home(){
+        $data['song']=$this->model_song->getSong();
         $this->load->view('page_header');
-        $this->load->view('page_home');        
+        $this->load->view('page_home',$data); 
         $this->load->view('page_footer');
     }
 

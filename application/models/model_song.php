@@ -30,8 +30,12 @@ class model_song extends CI_Model{
 		$query = $this->db->get();
 		return $query->result();
     }
-    
 
+    public function getSong(){
+		$query = $this->db->get('song');
+		return $query->result_array();
+    }
+    
     public function SearchSong(){
         $keyword = $this->input->post('keyword', true);
         $where = "title like '%" .$keyword. "%' OR artist like '%" .$keyword. "%' OR album like '%" .$keyword. "%'";

@@ -27,9 +27,9 @@
         </div>
     </div>
     <!-- what's hot placeholder -->
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 albuma"><a href="<?php echo base_url() ?>a/artist"><img src="assets/65471.jpg" alt="" /></a><a href="<?php echo base_url() ?>a/artist">Aaron Lewis</a> "State I'm In"</div>
-        <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>a/artist"><img src="assets/66595.jpg" alt="" /></a><a href="<?php echo base_url() ?>a/artist">Anderson .Paak</a> "Ventura"</div>
+    <!-- <div class="row">
+        <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 albuma"><a href="<?php echo base_url() ?>a/artist"><img src="assets/65471.jpg" alt="" /></a><a href="<?php echo base_url() ?>a/artist"><?php echo $sg['artist'] ?></a>"<?php echo $sg['album'] ?>"</div>
+        <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>a/artist"><img src="assets/66595.jpg" alt="" /></a><a href="<?php echo base_url() ?>a/artist"><?php echo $sg['artist'][4] ?></a> "Ventura"</div>
         <div class="clearfix visible-xs-block"></div>
         <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>b/artist"><img src="assets/67033.jpg" alt="" /></a><a href="<?php echo base_url() ?>b/artist">BTS</a> "MAP OF THE SOUL: PERSONA"</div>
         <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>c/artist"><img src="assets/67484.jpg" alt="" /></a><a href="<?php echo base_url() ?>c/artist">Capital Bra</a> "CB6"</div>
@@ -54,6 +54,11 @@
         <div class="clearfix visible-xs-block"></div>
         <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>r/artist"><img src="assets/65813.jpg" alt="" /></a><a href="<?php echo base_url() ?>r/artist">Reba McEntire</a> "Stronger Than The Truth"</div>
         <div class="col-xs-6 col-sm-3 col-lg-2 albuma"><a href="<?php echo base_url() ?>s/artist"><img src="assets/65915.jpg" alt="" /></a><a href="<?php echo base_url() ?>s/artist">Sara Bareilles</a> "Amidst The Chaos"</div>
+    </div> -->
+    <div class="row">
+        <?php foreach ($song as $sg) :?>
+        <div class="col-xs-3 col-sm-3 col-lg-3 albuma"><a href="<?php echo base_url() ?>r/artist"><img src="assets/65813.jpg" alt="" /></a><a href="<?php echo base_url() ?>r/artist"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
+        <?php endforeach ?>
     </div>
     <!-- end of what's hot placeholder -->
 </div>  <!-- container main-page -->
