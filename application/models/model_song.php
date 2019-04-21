@@ -31,23 +31,10 @@ class model_song extends CI_Model{
 		return $query->result();
     }
     
-    public function SearchArtist(){
-        $keyword = $this->input->post('keyword', true);
-        $where = "name like '%" .$keyword. "%'";
-        $this->db->select('*');
-        $this->db->from('artist');
-        $this->db->where($where);
-        $query = $this->db->get();
-        if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }else {
-            return false;
-        }
-    }
 
     public function SearchSong(){
         $keyword = $this->input->post('keyword', true);
-        $where = "song_title like '%" .$keyword. "%'";
+        $where = "title like '%" .$keyword. "%' OR artist like '%" .$keyword. "%' OR album like '%" .$keyword. "%'";
         $this->db->select('*');
         $this->db->from('song');
         $this->db->where($where);
@@ -57,20 +44,6 @@ class model_song extends CI_Model{
         }else {
             return false;
         }
-    }
-
-    public function SearchAlbum(){
-        $keyword = $this->input->post('keyword', true);
-        $where = "album_name like '%" .$keyword. "%'";
-        $this->db->select('*');
-        $this->db->from('album');
-        $this->db->where($where);
-        $query = $this->db->get();
-        if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }else {
-            return false;
-        }   
     }
     
     public function insert_lyrics(){

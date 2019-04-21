@@ -1,7 +1,7 @@
 <div class="container main-page">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 20px;">
-        <?php if($artist != false){?>
+        <?php if($song != false){?>
             <div class="panel">
                 <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
                
@@ -10,10 +10,33 @@
             <!-- Perulangan Database -->        
             <?php
             $i = 1;
-             foreach ($artist as $row){ ?>
+             foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['name'];
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['artist'];
+ ?></b></a>
+                </td>
+            </tr>
+            <?php } ?>
+            <!-- end -->
+                    
+                </table>
+               
+            </div>
+            <?php } ?>
+            <?php if($song != false){?>
+            <div class="panel">
+                <div class="panel-heading"><b>Album results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Album</span> found]</small></div>
+               
+                <table class="table table-condensed">
+                    
+            <!-- Perulangan Database -->        
+            <?php
+            $i = 1;
+             foreach ($song as $row){ ?>
+            <tr>
+                <td class="text-left visitedlyr">
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['album'];
  ?></b></a>
                 </td>
             </tr>

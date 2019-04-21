@@ -8,7 +8,7 @@ class song extends CI_Controller{
         $this->load->library('form_validation');
     }
     
-    
+    //update db
     #account
     public $data = array(
         "fullname" => "Prana Pramudita Kusdiananggalih",
@@ -24,9 +24,7 @@ class song extends CI_Controller{
 
     #search function
     public function search(){
-        $data['artist']=$this->model_song->SearchArtist();
         $data['song']=$this->model_song->SearchSong();
-        $data['album']=$this->model_song->SearchAlbum();
         $this->load->view('page_header');
         $this->load->view('page_search',$data);
         $this->load->view('page_footer');
