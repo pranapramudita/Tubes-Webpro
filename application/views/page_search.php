@@ -73,7 +73,7 @@
             
             <form class="search" method="get" action="" role="search">
                 <div style="margin-bottom:15px" class="input-group">
-                    <input type="text" class="form-control" placeholder="" name="q" value="joji">
+                    <input type="text" class="form-control" placeholder="" name="q" value="">
                     <span class="input-group-btn">
             	  <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
           	</span>
