@@ -45,20 +45,21 @@ class song extends CI_Controller{
     
     #lyrics function
     public function lyrics(){
-        $name = $this->input->post('name');
-		$artist = $this->input->post('artist');
-        $song = $this->input->post('song');
-        $album = $this->input->post('album');
-        $source = $this->input->post('source');
+        $id_song = $this->input->post('id_song');
+		$id_artist = $this->input->post('id_artist');
+        $id_album = $this->input->post('id_album');
+        $song_title = $this->input->post('song_title');
+        $producer = $this->input->post('producer');
         $lyrics = $this->input->post('lyrics');
 		$data = array(
-			'name' => $name,
-			'artist' => $artist,
-			'song' => $song,
-            'album' => $album,
-            'source' => $source,
+			'id_song' => $id_song,
+			'id_artist' => $id_artist,
+			'id_album' => $id_album,
+            'song_title' => $song_title,
+            'producer' => $producer,
             'lyrics' => $lyrics,
         );
+        // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
         $this->model_song->insert_lyrics($data);
         $this->load->view('page_header');
         $this->load->view('page_submit');
