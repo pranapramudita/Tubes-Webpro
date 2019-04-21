@@ -11,7 +11,7 @@
 
     <div class="panel">
     <div class="panel-body">
-    <form id="submitLyrics" method="post">
+    <form id="submitLyrics" method="post" action="<?php echo site_url('song/lyrics')?>">
       <!-- <input type="hidden" name="song_id" value="null">
       <input type="hidden" name="artist_id" id="artist_id" value="null">
       <div class="form-group">
