@@ -31,8 +31,17 @@ class model_song extends CI_Model{
 		return $query->result();
     }
     
-    public function insert_lyrics($data){
-        $this->db->insert('song',$data);
+    public function insert_lyrics(){
+        $data = array(
+			'id_song' => $this->input->post('name'),
+			'id_artist' => $this->input->post('artist'),
+			'id_album' => $this->input->post('song'),
+            'song_title' => $this->input->post('album'),
+            'producer' => $this->input->post('source'),
+            'lyrics' => $this->input->post('lyrics'),
+        );
+        $query = $this->db->insert('song', $data);
+        return $query;
     }
 }
 ?>

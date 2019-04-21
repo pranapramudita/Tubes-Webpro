@@ -5,6 +5,7 @@ class song extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('model_song');
+        $this->load->library('form_validation');
     }
     
     
@@ -45,25 +46,19 @@ class song extends CI_Controller{
     
     #lyrics function
     public function lyrics(){
-        $id_song = $this->input->post('id_song');
-		$id_artist = $this->input->post('id_artist');
-        $id_album = $this->input->post('id_album');
-        $song_title = $this->input->post('song_title');
-        $producer = $this->input->post('producer');
-        $lyrics = $this->input->post('lyrics');
-		$data = array(
-			'id_song' => $id_song,
-			'id_artist' => $id_artist,
-			'id_album' => $id_album,
-            'song_title' => $song_title,
-            'producer' => $producer,
-            'lyrics' => $lyrics,
-        );
         // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
-        $this->model_song->insert_lyrics($data);
-        $this->load->view('page_header');
-        $this->load->view('page_submit');
-        $this->load->view('page_footer');
+        // $this->model_song->insert_lyrics($data);
+        $this->form_validation->set_rules('id_song','name','required');
+        if($this->form_validation->run() == false){
+            $this->load->view('page_header');
+            $this->load->view('page_submit');
+            $this->load->view('page_footer');
+        }
+        else{
+            $this->model_song->insert_lyrics();
+            $this->session->set_flashdata('msg', ' added success');
+            redirect('home','refresh');
+        }
     }
 
     #contact function
