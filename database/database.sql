@@ -29,10 +29,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `song` (
-  `song` varchar(500) NOT NULL,
+  `title` varchar(500) NOT NULL,
   `artist` varchar(500) NOT NULL,
   `album` varchar(500) NOT NULL,
-  `title` varchar(500) NOT NULL,
   `lyrics` text NOT NULL,
   `id_song` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
