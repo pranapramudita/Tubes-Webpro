@@ -56,4 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['tubes-webpro/[a-z1]'] = 'song/word';
 $route['tubes-webpro/[a-z1]/song'] = 'song/song';
 $route['tubes-webpro/search'] = 'song/search';
-$route['tubes-webpro/add'] = 'song/lyrics/';
+$route['tubes-webpro/submit'] = 'song/lyrics';
