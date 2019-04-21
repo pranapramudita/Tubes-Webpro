@@ -48,13 +48,7 @@ class model_song extends CI_Model{
         }
     }
     
-    public function insert_lyrics(){
-        $data = [
-            "title" => $this->input->post('title', true),
-            "artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
-            "lyrics" => $this->input->post('lyrics', true),
-        ];
+    public function insert_lyrics($data){
         $query = $this->db->insert('song', $data);
         return $query;
     }
