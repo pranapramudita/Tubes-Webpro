@@ -65,17 +65,17 @@
       </div>
       <div class="alert" id="resultBlock" style="display: none"></div> -->
       <div class="form-group">
-        <label for="title">Song Title</label>
+        <label for="title">Song Title:</label>
         <input type="text" class="form-control" id="title" name="title" required>
         <small class="form-text text-danger"><?= form_error('title') ?></small>
       </div>
       <div class="form-group">
-        <label for="artist">Artist</label>
+        <label for="artist">Artist:</label>
         <input type="text" class="form-control" id="artist" name="artist" required>
         <small class="form-text text-danger"><?= form_error('artist') ?></small>
       </div>
       <div class="form-group">
-        <label for="album">Album</label>
+        <label for="album">Album:</label>
         <input type="text" class="form-control" id="album" name="album" required>
         <small class="form-text text-danger"><?= form_error('album') ?></small>
       </div>
