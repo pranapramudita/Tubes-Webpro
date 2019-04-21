@@ -57,7 +57,7 @@
     </div> -->
     <div class="row">
         <?php foreach ($song as $sg) :?>
-        <div class="col-xs-3 col-sm-3 col-lg-3 albuma"><a href="<?php echo base_url() ?>r/artist"><img src="assets/65813.jpg" alt="" /></a><a href="<?php echo base_url() ?>r/artist"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
+        <div class="col-xs-3 col-sm-3 col-lg-3 albuma"><a href="<?php echo base_url() ?>artist"><img src="assets/65813.jpg" alt="" /></a><a href="<?php echo base_url() ?>artist"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
         <?php endforeach ?>
     </div>
     <!-- end of what's hot placeholder -->
