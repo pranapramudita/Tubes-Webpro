@@ -13,7 +13,7 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['artist'];
+                    <?= $i++?>. <a href="artist" target="_blank"><b><?php echo $row['artist'];
  ?></b></a>
                 </td>
             </tr>

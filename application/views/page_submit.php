@@ -68,19 +68,33 @@
         <label for="title">Song Title</label>
         <input type="text" class="form-control" id="title" name="title" required>
         <small class="form-text text-danger"><?= form_error('title') ?></small>
-      </div><div class="form-group">
+      </div>
+      <div class="form-group">
         <label for="artist">Artist</label>
         <input type="text" class="form-control" id="artist" name="artist" required>
         <small class="form-text text-danger"><?= form_error('artist') ?></small>
-      </div><div class="form-group">
+      </div>
+      <div class="form-group">
         <label for="album">Album</label>
         <input type="text" class="form-control" id="album" name="album" required>
         <small class="form-text text-danger"><?= form_error('album') ?></small>
-      </div><div class="form-group">
+      </div>
+      <div class="form-group">
         <label for="lyrics">Lyrics:</label>
         <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;" required></textarea>
         <!-- <input type="text" class="form-control" id="lyrics" name="lyrics"> -->
         <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
+      </div>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <span class="btn btn-default btn-file">
+            Browse… <input type="file" id="imgInp" name='userfile'>
+          </span>
+          </span>
+          <input type="text" class="form-control" readonly>
+          <span class="input-group-btn">
+          <input class="btn btn-primary" type="submit" value="Upload">
+        </span>
       </div>
       <button class="btn btn-primary" name="submit" type="submit">Submit Lyrics</button>
     </form>
