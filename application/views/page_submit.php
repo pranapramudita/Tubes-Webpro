@@ -88,7 +88,7 @@
       <div class="form-group">
       <label for="lyrics">Album Cover:</label>
       <div class="input-group">
-        <input type="file" id="imgInp" name='userfile' class="form-control" rows="5">
+        <input type="file" id="imgInp" name='userfile' class="form-control">
         <span class="input-group-btn">
           <input class="btn btn-primary" type="submit" value="Upload">
         </span>
