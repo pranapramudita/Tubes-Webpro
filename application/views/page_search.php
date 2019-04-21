@@ -57,18 +57,11 @@
             $i = 1;
              foreach ($song as $row){ ?>
             <tr>
-                <td class="text-left visitedlyr">
+            <td class="text-left visitedlyr">
                     <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['title'];
  ?></b></a>
                 </td>
             </tr>
-            <?php } ?>
-            <!-- end -->
-                    
-                </table>
-               
-            </div>
-            <?php } ?>
             <!-- end -->
 
             <tr>
