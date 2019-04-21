@@ -31,7 +31,7 @@ class model_song extends CI_Model{
 		return $query->result();
     }
     
-    public function input_lyrics($data){
+    public function insert_lyrics($data){
         $this->db->insert('song',$data);
 	    return;
     }
