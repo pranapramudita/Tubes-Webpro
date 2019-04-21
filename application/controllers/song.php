@@ -35,9 +35,9 @@ class song extends CI_Controller{
     }
 
     #song function
-    public function song(){
+    public function artist(){
         $this->load->view('page_header');
-        $this->load->view('page_song');
+        $this->load->view('page_artist');
         $this->load->view('page_footer');
     }
     

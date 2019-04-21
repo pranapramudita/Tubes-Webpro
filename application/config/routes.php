@@ -54,7 +54,7 @@ $route['404_override'] = 'song/error';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['tubes-webpro/[a-z1]'] = 'song/word';
-$route['tubes-webpro/[a-z1]/song'] = 'song/song';
+$route['tubes-webpro/[a-z1]/artist'] = 'song/artist';
 $route['tubes-webpro/search'] = 'song/search';
 $route['tubes-webpro/submit'] = 'song/lyrics';
 $route['tubes-webpro/contact'] = 'song/contact';
