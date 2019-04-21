@@ -70,7 +70,11 @@ class song extends CI_Controller{
             "lyrics" => $this->input->post('lyrics', true),
             "image" => $this->input->post('userfile', true),
         ];
-        $this->model_song->insert_lyrics($data);
+        if (isset($_GET['what-cor'])){
+            $this->model_song->update_lyrics($data);
+        } else{
+            $this->model_song->insert_lyrics($data);
+        }
         redirect('home','refresh');
     }
 
