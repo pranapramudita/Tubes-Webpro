@@ -85,17 +85,17 @@
         <!-- <input type="text" class="form-control" id="lyrics" name="lyrics"> -->
         <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
       </div>
+      <div class="form-group">
+      <label for="lyrics">Album Cover:</label>
       <div class="input-group">
+        <input type="file" id="imgInp" name='userfile' class="form-control">
         <span class="input-group-btn">
-          <span class="btn btn-default btn-file">
-            Browse… <input type="file" id="imgInp" name='userfile'>
-          </span>
-          </span>
-          <input type="text" class="form-control" readonly>
-          <span class="input-group-btn">
           <input class="btn btn-primary" type="submit" value="Upload">
         </span>
+        </div>
+        <img id='img-upload'/>
       </div>
+      
       <button class="btn btn-primary" name="submit" type="submit">Submit Lyrics</button>
     </form>
     </div>
