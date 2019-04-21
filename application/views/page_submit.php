@@ -65,34 +65,23 @@
       </div>
       <div class="alert" id="resultBlock" style="display: none"></div> -->
       <div class="form-group">
-        <label for="song">song</label>
-        <input type="text" class="form-control" id="song" name="song">
-        <small class="form-text text-danger"><?= form_error('song') ?>.</small>
+        <label for="title">Song Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+        <small class="form-text text-danger"><?= form_error('title') ?></small>
       </div><div class="form-group">
-        <label for="artist">artist</label>
-        <input type="text" class="form-control" id="artist" name="artist">
-        <small class="form-text text-danger"><?= form_error('artist') ?>.</small>
+        <label for="artist">Artist</label>
+        <input type="text" class="form-control" id="artist" name="artist" required>
+        <small class="form-text text-danger"><?= form_error('artist') ?></small>
       </div><div class="form-group">
-        <label for="album">album</label>
-        <input type="text" class="form-control" id="album" name="album">
-        <small class="form-text text-danger"><?= form_error('album') ?>.</small>
-      </div><div class="form-group">
-        <label for="title">title</label>
-        <input type="text" class="form-control" id="title" name="title">
-        <small class="form-text text-danger"><?= form_error('title') ?>.</small>
+        <label for="album">Album</label>
+        <input type="text" class="form-control" id="album" name="album" required>
+        <small class="form-text text-danger"><?= form_error('album') ?></small>
       </div><div class="form-group">
         <label for="lyrics">Lyrics:</label>
-        <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;"></textarea>
+        <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;" required></textarea>
         <!-- <input type="text" class="form-control" id="lyrics" name="lyrics"> -->
-        <small class="form-text text-danger"><?= form_error('lyrics') ?>.</small>
+        <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
       </div>
-
-      <!-- 'id_song' => $this->input->post('name'),
-			'id_artist' => $this->input->post('artist'),
-			'id_album' => $this->input->post('song'),
-            'song_title' => $this->input->post('album'),
-            'producer' => $this->input->post('source'),
-            'lyrics' => $this->input->post('lyrics'), -->
       <button class="btn btn-primary" name="submit" type="submit">Submit Lyrics</button>
     </form>
     </div>
