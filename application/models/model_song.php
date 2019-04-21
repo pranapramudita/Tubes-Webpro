@@ -29,6 +29,11 @@ class model_song extends CI_Model{
         $this->db->join('song','song.id_artist=song.id_artist');
 		$query = $this->db->get();
 		return $query->result();
-	}
+    }
+    
+    public function input_lyrics($data){
+        $this->db->insert('song',$data);
+	    return;
+    }
 }
 ?>

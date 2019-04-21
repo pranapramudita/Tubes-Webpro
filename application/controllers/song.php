@@ -36,13 +36,29 @@ class song extends CI_Controller{
 
     #song function
     public function artist(){
-        $this->load->view('page_header');
-        $this->load->view('page_artist');
+        $data_artist = $this->model_song->GetArtist();
+		$this->load->view('page_header');
+		$this->load->view('page_artist',['data'=>$data_artist]);
         $this->load->view('page_footer');
     }
     
     #lyrics function
     public function lyrics(){
+        $name = $this->input->post('name');
+		$artist = $this->input->post('artist');
+        $song = $this->input->post('song');
+        $album = $this->input->post('album');
+        $source = $this->input->post('source');
+        $lyrics = $this->input->post('lyrics');
+		$data = array(
+			'name' => $nim,
+			'artist' => $nama,
+			'song' => $song,
+            'album' => $album,
+            'source' => $source,
+            'lyrics' => $lyrics,
+		);
+        $this->model_song->insert_lyrics($data);
         $this->load->view('page_header');
         $this->load->view('page_submit');
         $this->load->view('page_footer');
@@ -111,6 +127,8 @@ class song extends CI_Controller{
         $this->model_song->delete_song($id_song);
         redirect('index.php/web/song','refresh');
     }
+
+    
 }
 
 ?>
