@@ -48,7 +48,11 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
-    
+    #error function
+    public function error(){
+        $this->load->view('page_error');
+    }
+
     #CRUD song function
     public function createsong(){
         $data = [
