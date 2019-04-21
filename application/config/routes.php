@@ -65,3 +65,4 @@ $route['tubes-webpro/contact'] = 'song/contact';
 $route['tubes-webpro/adv'] = 'song/adv';
 $route['tubes-webpro/privacy'] = 'song/privacy';
 $route['tubes-webpro/copyright'] = 'song/copyright';
+

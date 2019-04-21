@@ -28,7 +28,7 @@
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse"><span class="glyphicon glyphicon-search"></span></button>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#artists-collapse"><span class="glyphicon glyphicon-th-list"></span></button>
-            <a class="navbar-brand" href="<?php echo base_url() ?>"><img alt="AZLyrics.com" class="pull-left" style="max-height:40px; margin-top:-10px;" src="//www.azlyrics.com/az_logo_tr.png"></a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img alt="AZLyrics.com" class="pull-left" style="max-height:40px; margin-top:-10px;" src="<?php echo base_url() ?>/assets/icon.png"></a>
             </div>
             <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
             <li>
@@ -66,7 +66,7 @@
 
             <div class="collapse navbar-collapse" id="search-collapse">
 
-            <form class="navbar-form navbar-right search" method="post" action="<?php echo site_url('search') ?>">
+            <form class="navbar-form navbar-right search" method="post" action="<?php echo base_url() ?>search">
                 <div class="input-group">  
                 <input type="text" class="form-control" placeholder="" name="keyword" id="q">
                     <span class="input-group-btn">
