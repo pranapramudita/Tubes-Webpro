@@ -63,7 +63,7 @@ class model_song extends CI_Model{
         $keyword = $this->input->post('keyword', true);
         $where = "album_name like %" .$keyword. "%'";
         $this->db->select('*');
-        $this->db->from('name');
+        $this->db->from('album');
         $this->db->where($where);
         $query = $this->db->get()->result_array();
         if ($query->num->rows > 0) {
