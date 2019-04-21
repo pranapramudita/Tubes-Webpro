@@ -33,13 +33,13 @@ class model_song extends CI_Model{
     
     public function SearchArtist(){
         $keyword = $this->input->post('keyword', true);
-        $where = "name like %" .$keyword. "%'";
+        $where = "name like '%" .$keyword. "%'";
         $this->db->select('*');
         $this->db->from('artist');
         $this->db->where($where);
-        $query = $this->db->get()->result_array();
-        if ($query->num->rows > 0) {
-            return $query;
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
         }else {
             return false;
         }
@@ -47,13 +47,13 @@ class model_song extends CI_Model{
 
     public function SearchSong(){
         $keyword = $this->input->post('keyword', true);
-        $where = "song_title like %" .$keyword. "%'";
+        $where = "song_title like '%" .$keyword. "%'";
         $this->db->select('*');
         $this->db->from('song');
         $this->db->where($where);
-        $query = $this->db->get()->result_array();
-        if ($query->num->rows > 0) {
-            return $query;
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
         }else {
             return false;
         }
@@ -61,13 +61,13 @@ class model_song extends CI_Model{
 
     public function SearchAlbum(){
         $keyword = $this->input->post('keyword', true);
-        $where = "album_name like %" .$keyword. "%'";
+        $where = "album_name like '%" .$keyword. "%'";
         $this->db->select('*');
         $this->db->from('album');
         $this->db->where($where);
-        $query = $this->db->get()->result_array();
-        if ($query->num->rows > 0) {
-            return $query;
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
         }else {
             return false;
         }   

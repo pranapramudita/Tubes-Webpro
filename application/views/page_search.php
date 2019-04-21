@@ -1,22 +1,30 @@
-search<div class="container main-page">
+<div class="container main-page">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 20px;">
-            
+        <?php if($artist != false){?>
             <div class="panel">
                 <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
+               
                 <table class="table table-condensed">
                     
             <!-- Perulangan Database -->        
+            <?php
+            $i = 1;
+             foreach ($artist as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    1. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b>Joji</b></a>
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['name'];
+ ?></b></a>
                 </td>
             </tr>
+            <?php } ?>
             <!-- end -->
                     
                 </table>
+               
             </div>
-            
+            <?php } ?>
+
             <div class="panel">
                 <div class="panel-heading"><b>Song results:</b><br><small>[1-5 of 56 total <span class="text-lowercase">Songs</span> found]</small></div>
                 <table class="table table-condensed">
