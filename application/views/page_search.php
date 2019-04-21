@@ -13,7 +13,30 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['name'];
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['artist'];
+ ?></b></a>
+                </td>
+            </tr>
+            <?php } ?>
+            <!-- end -->
+                    
+                </table>
+               
+            </div>
+            <?php } ?>
+            <?php if($song != false){?>
+            <div class="panel">
+                <div class="panel-heading"><b>Album results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Album</span> found]</small></div>
+               
+                <table class="table table-condensed">
+                    
+            <!-- Perulangan Database -->        
+            <?php
+            $i = 1;
+             foreach ($song as $row){ ?>
+            <tr>
+                <td class="text-left visitedlyr">
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['album'];
  ?></b></a>
                 </td>
             </tr>
