@@ -55,7 +55,7 @@
             <!-- Perulangan Database -->
             <tr>
             <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['lyrics'];
+                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['title'];
  ?></b></a>
                 </td>
             </tr>
