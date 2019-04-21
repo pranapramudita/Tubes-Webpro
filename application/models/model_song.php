@@ -21,5 +21,14 @@ class model_song extends CI_Model{
         $this->db->where('id_song', $id_song);
         $this->db->delete('song');
     }
+
+    public function GetArtist(){
+		$this->db->select('album_name','song','name');
+		$this->db->from('artist');
+        $this->db->join('artist','artist.id_artist=album.id_artist');
+        $this->db->join('song','song.id_artist=song.id_artist');
+		$query = $this->db->get();
+		return $query->result();
+	}
 }
 ?>

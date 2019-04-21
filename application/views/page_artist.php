@@ -32,6 +32,10 @@
             <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a><a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
 
             <!-- Perulangan list album -->
+            <!-- <?php foreach ($data as $d) {?>        -->
+                <!-- <?php echo $d['song_title'];?> -->
+                <!-- <?php echo $d['name'];?> -->
+                <!-- <?php echo $d['album_name']?> -->
             <div id="23325" class="album">album: <b>"The Road"</b> (2012)</div>
             <!-- Perulangan list lagu -->
             <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
