@@ -8,7 +8,6 @@ class song extends CI_Controller{
         $this->load->library('form_validation');
     }
     
-    //update db
     #account
     public $data = array(
         "fullname" => "Prana Pramudita Kusdiananggalih",
@@ -54,7 +53,7 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
     
-    #lyrics function
+    #function submit lyrics
     public function submit(){
         // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
         // $this->model_song->insert_lyrics($data);
@@ -83,7 +82,7 @@ class song extends CI_Controller{
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->model_song->insert_lyrics($data);
-        redirect('submit','refresh');
+        redirect('home','refresh');
     }
     
 
