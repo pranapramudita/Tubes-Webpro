@@ -118,7 +118,7 @@ class song extends CI_Controller{
         $data = [
             "name" => $this->input->post('name', true),
             "email" => $this->input->post('email', true),
-            "subj" => $this->input->post('subj', true),
+            "subject" => $this->input->post('subj', true),
             "message" => $this->input->post('comments', true),
         ];
         $this->model_song->insert_about($data);
