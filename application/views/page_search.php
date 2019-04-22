@@ -13,7 +13,7 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist" target="_blank"><b><?php echo $row['artist'];
+                    <?= $i++?>. <a href="artist/<?php echo $row['artist'] ?>" target="_blank"><b><?php echo $row['artist'];
  ?></b></a>
                 </td>
             </tr>
@@ -36,7 +36,7 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['album'];
+                    <?= $i++?>. <a href="artist/<?php echo $row['artist'] ?>" target="_blank"><b><?php echo $row['album'];
  ?></b></a>
                 </td>
             </tr>
@@ -55,7 +55,7 @@
             <!-- Perulangan Database -->
             <tr>
             <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="https://www.azlyrics.com/j/joji.html" target="_blank"><b><?php echo $row['title'];
+                    <?= $i++?>. <a href="artist/<?php echo $row['artist'] ?>" target="_blank"><b><?php echo $row['title'];
  ?></b></a>
                 </td>
             </tr>
