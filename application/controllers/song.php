@@ -40,7 +40,8 @@ class song extends CI_Controller{
 
     #artist function
     public function artist($artist){
-        $data['song']= $this->model_song->GetArtist($artist);
+        $data['artist']= $this->model_song->GetArtist($artist);
+        
 		$this->load->view('page_header');
 		$this->load->view('page_artist',$data);
         $this->load->view('page_footer');
