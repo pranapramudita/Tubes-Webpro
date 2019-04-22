@@ -122,7 +122,8 @@ class song extends CI_Controller{
             "message" => $this->input->post('comments', true),
         ];
         $this->model_song->insert_about($data);
-        redirect('home','refresh');
+        //$this->session->set_flashdata('message', 'anda berhasil menginput data');
+        redirect('contact','refresh');
     }
 
     #adv function

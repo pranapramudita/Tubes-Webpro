@@ -66,4 +66,4 @@ $route['tubes-webpro/contact_save'] = 'song/contact_save';
 $route['tubes-webpro/adv'] = 'song/adv';
 $route['tubes-webpro/privacy'] = 'song/privacy';
 $route['tubes-webpro/copyright'] = 'song/copyright';
-
+$route['flashdata'] = 'song/home'; 

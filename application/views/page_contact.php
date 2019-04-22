@@ -28,6 +28,7 @@
                     <button class="btn btn-primary" type="submit" name="submit">Send Message</button>
                     </form>
                 </div>
+                <!-- <?php echo $this->session->flashdata('message');?> -->
             </div>
         </div>
     </div>
