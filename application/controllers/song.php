@@ -77,53 +77,21 @@ class song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
-            "title" => $this->input->post('title', true),
-            "artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
+            "name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
-            "image" => $this->input->post('userfile', true),
         ];
         $this->model_song->insert_lyrics($data);
-        $this->upload();
         redirect('submit','refresh');
     }
-
-    #upload function
-    public function upload(){
-        $config['upload_path'] = './assets/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size']  = '4096';
-        $config['max_width']  = '1920';
-        $config['max_height']  = '1080';
-        
-        $this->load->library('upload', $config);
-        
-        if (!$this->upload->do_upload()){
-            $error = array('error' => $this->upload->display_errors());
-        }
-        else{
-            $data = array('upload_data' => $this->upload->data());
-        }
-    }
+    
 
     #contact function
     public function contact(){
         $this->load->view('page_header');
         $this->load->view('page_contact');
         $this->load->view('page_footer');
-    }
-
-    #contact_save function
-    public function contact_save(){
-        $data = [
-            "name" => $this->input->post('name', true),
-            "email" => $this->input->post('email', true),
-            "subject" => $this->input->post('subj', true),
-            "message" => $this->input->post('comments', true),
-        ];
-        $this->model_song->insert_about($data);
-        //$this->session->set_flashdata('message', 'anda berhasil menginput data');
-        redirect('contact','refresh');
     }
 
     #adv function
