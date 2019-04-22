@@ -94,6 +94,18 @@ class song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
+    #contact_save function
+    public function contact_save(){
+        $data = [
+            "name" => $this->input->post('name', true),
+            "email" => $this->input->post('email', true),
+            "subject" => $this->input->post('subj', true),
+            "message" => $this->input->post('comments', true),
+        ];
+        $this->model_song->insert_contact($data);
+        redirect('contact','refresh');
+    }
+
     #adv function
     public function adv(){
         $this->load->view('page_header');
