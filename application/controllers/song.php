@@ -77,9 +77,9 @@ class song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
-            "name" => $this->input->post('artist', true),
-            "album_name" => $this->input->post('album', true),
-            "song_title" => $this->input->post('title', true),
+            "title" => $this->input->post('title', true),
+            "artist" => $this->input->post('artist', true),
+            "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->model_song->insert_lyrics($data);
@@ -100,10 +100,10 @@ class song extends CI_Controller{
             "name" => $this->input->post('name', true),
             "email" => $this->input->post('email', true),
             "subj" => $this->input->post('subj', true),
-            "comments" => $this->input->post('comments', true),
+            "message" => $this->input->post('comments', true),
         ];
         $this->model_song->insert_about($data);
-        redirect('home','refresh');
+        redirect('contact');
     }
 
     #adv function
