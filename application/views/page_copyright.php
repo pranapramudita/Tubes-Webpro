@@ -17,7 +17,7 @@ protections provided by applicable copyright law.<br>
 
 <br><b>Designated Agent</b><br>
 To exercise your DMCA rights, you must send your Proper DMCA Notice to the following agent designated by Company (the "Designated Agent"). The contact information for AZLyrics.com Designated Agent is:<br>
-Email: <a href="mailto:&#100;mca@azlyrics.com">&#100;mca@a&#122;lyrics.com</a><br>This email address may be used only for copyright infringement claims - you will not receive a reply if the matter is not a copyright issue.<br><br>
+Email: <a href="mailto:&#100;tubes@webpro">&#100;mca@a&#122;lyrics.com</a><br>This email address may be used only for copyright infringement claims - you will not receive a reply if the matter is not a copyright issue.<br><br>
 Upon receipt of proper notification of claimed infringement, Company will follow the procedures outlined herein and in the DMCA.<br>
 
 <br><b>Complaint Notice Procedures for Copyright Owners</b><br>
