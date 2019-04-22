@@ -122,7 +122,7 @@ class song extends CI_Controller{
             "message" => $this->input->post('comments', true),
         ];
         $this->model_song->insert_about($data);
-        redirect('contact');
+        redirect('home','refresh');
     }
 
     #adv function
