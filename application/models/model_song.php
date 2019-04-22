@@ -60,7 +60,7 @@ class model_song extends CI_Model{
 
     public function insert_about($data){
         $query = $this->db->insert('contact', $data);
-        retunr $query;
+        return $query;
     }
 }
 ?>
