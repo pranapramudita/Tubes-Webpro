@@ -57,5 +57,10 @@ class model_song extends CI_Model{
         $query = $this->db->insert('song', $data);
         return $query;
     }
+
+    public function insert_about($data){
+        $query = $this->db->insert('contact', $data);
+        retunr $query;
+    }
 }
 ?>
