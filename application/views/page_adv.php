@@ -43,7 +43,7 @@
             <div class="panel panel-info">
                 <div class="panel-body">
                     For advertising information, inquiries and RFP submissions please contact <a href="#">BandsInTown</a>.<br>
-                    Email <a href="mailto:brands@bandsintown.com">brands@bandsintown.com</a> or <a href="#">Request Media Kit</a>.<br>
+                    Email <a href="#">tubes@tubeswebpro</a> or <a href="#">Request Media Kit</a>.<br>
                 </div>
             </div>
 
