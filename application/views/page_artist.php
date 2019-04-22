@@ -37,9 +37,9 @@
                 <?php echo $d['title'];?>
                 <?php echo $d['artist'];?>
                 <?php echo $d['album']?> 
-            <div id="" class="">album: <b>"<?= $song[0]['album'] ?>"</b> </div>
+            <div id="" class="">album: <b>""</b> </div>
             <!-- Perulangan list lagu -->
-            <a href="../lyrics/aaronlewis/75.html" target="_blank"><?= $song[0]['album'] ?></a><br>
+            <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
             <!-- end -->
             </div>
             <?php } ?>
