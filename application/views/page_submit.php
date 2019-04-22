@@ -43,7 +43,6 @@
       <div class="form-group">
         <label for="lyrics">Lyrics:</label>
         <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;" required></textarea>
-        <!-- <input type="text" class="form-control" id="lyrics" name="lyrics"> -->
         <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
       </div>
       <div class="form-group">
