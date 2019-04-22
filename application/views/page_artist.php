@@ -33,16 +33,16 @@
 
             <!-- Perulangan list album -->
             
-            <?php foreach ($song as $d) { ?>  
-                <?php echo $d['title'];?>
-                <?php echo $d['artist'];?>
-                <?php echo $d['album']?> 
-            <div id="" class="">album: <b>""</b> </div>
+            <?php foreach ($song as $s) { ?>
+            <div id="" class="">album: <b><?php echo $s['album']?></b> </div>
+            <?php  ?>
             <!-- Perulangan list lagu -->
-            <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
+            <?php foreach ($song as $s) { ?>
+            <a href="../lyrics/aaronlewis/75.html" target="_blank"><?php echo $s['title']?></a><br>
+            <?php  ?>
             <!-- end -->
             </div>
-            <?php } ?>
+            
             <!-- end of song list -->
 
             <!-- <div class="ringtone">
