@@ -61,6 +61,7 @@ $route['tubes-webpro/search'] = 'song/search';
 $route['tubes-webpro/submit'] = 'song/submit';
 $route['tubes-webpro/submit_save'] = 'song/submit_save';
 $route['tubes-webpro/insert'] = 'song/insert';
+$route['tubes-webpro/contact'] = 'song/contact';
 $route['tubes-webpro/contact_save'] = 'song/contact_save';
 $route['tubes-webpro/adv'] = 'song/adv';
 $route['tubes-webpro/privacy'] = 'song/privacy';
