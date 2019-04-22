@@ -32,22 +32,15 @@
             <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a><a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
 
             <!-- Perulangan list album -->
-            <!--         <?php if($song != false){?>
-            <div class="panel">
-                <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
-               
-                <table class="table table-condensed">
-                    
-            <!-- Perulangan Database -->        
-            <?php
-            $i = 1;
-             foreach ($song as $row){ ?>
-            <tr>
-                <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist" target="_blank"><b><?php echo $row['artist'];
- ?></b></a>
-                </td>
-            </tr>
+            <?php foreach ($song as $d) { ?>  
+                <?php echo $d['title'];?>
+                <?php echo $d['artist'];?>
+                <?php echo $d['album']?> 
+            <div id="" class="">album: <b>""</b> </div>
+            <!-- Perulangan list lagu -->
+            <a href="../lyrics/aaronlewis/75.html" target="_blank">75</a><br>
+            <!-- end -->
+            </div>
             <?php } ?>
             <!-- end of song list -->
 
