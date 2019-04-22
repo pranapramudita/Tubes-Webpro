@@ -22,12 +22,16 @@ class model_song extends CI_Model{
         $this->db->delete('song');
     }
 
-    public function GetArtist(){
-		$this->db->select('*');
-        $this->db->from('song');
-        // $this->db->where('artist',$artist);
-		$query = $this->db->get();
-		return $query->result_array();
+    public function GetArtist($artist){
+        $this->db->where('artist', $artist);
+		$query = $this->db->get('song');
+        return $query->result_array();
+    }
+
+    public function GetListArtist($letter){
+        $this->db->like('artist', $letter);
+		$query = $this->db->get('song');
+        return $query->result_array();
     }
 
     public function getSong(){

@@ -29,7 +29,7 @@
     <!-- what's hot placeholder -->
     <div class="row">
         <?php foreach ($song as $sg) :?>
-        <div class="col-xs-3 albuma"><a href="<?php echo base_url() ?>artist"><img src="assets/<?php echo $sg['image'] ?>" alt="" /></a><a href="<?php echo base_url() ?>artist"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
+        <div class="col-xs-3 albuma"><a href="<?php echo base_url() ?>artist/<?php echo $sg['artist'] ?>"><img src="assets/<?php echo $sg['image'] ?>" alt="" /></a><a href="<?php echo base_url() ?>artist/<?php echo $sg['artist'] ?>"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
         <?php endforeach ?>
     </div>
     <!-- end of what's hot placeholder -->

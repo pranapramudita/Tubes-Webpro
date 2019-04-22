@@ -39,18 +39,18 @@ class song extends CI_Controller{
     }
 
     #artist function
-    public function artist(){
-        $data['song']= $this->model_song->GetArtist();
+    public function artist($artist){
+        $data['song']= $this->model_song->GetArtist($artist);
 		$this->load->view('page_header');
 		$this->load->view('page_artist',$data);
         $this->load->view('page_footer');
     }
 
-    #artist function
-    public function listartist(){
-    //     $data['song'] = $this->model_song->GetArtist();
+    #listartist function
+    public function listartist($letter){
+        $data['artist'] = $this->model_song->GetListArtist($letter);
 		$this->load->view('page_header');
-		$this->load->view('page_listartist');
+		$this->load->view('page_listartist',$artist);
         $this->load->view('page_footer');
     }
     

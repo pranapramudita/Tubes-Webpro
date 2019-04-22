@@ -33,33 +33,33 @@
             <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
             <li>
             <div class="btn-group text-center" role="group">
-            <a class="btn btn-menu" href="<?php echo base_url() ?>a">A</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>b">B</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>c">C</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>d">D</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>e">E</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>f">F</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>g">G</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>h">H</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>i">I</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>j">J</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>k">K</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>l">L</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>m">M</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>n">N</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>o">O</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>p">P</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>q">Q</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>r">R</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>s">S</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>t">T</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>u">U</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>v">V</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>w">W</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>x">X</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>y">Y</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>z">Z</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>1">#</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/a">A</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/b">B</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/c">C</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/d">D</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/e">E</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/f">F</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/g">G</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/h">H</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/i">I</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/j">J</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/k">K</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/l">L</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/m">M</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/n">N</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/o">O</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/p">P</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/q">Q</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/r">R</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/s">S</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/t">T</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/u">U</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/v">V</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/w">W</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/x">X</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/y">Y</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/z">Z</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/1">#</a>
             </div>
             </li>
             </ul>
