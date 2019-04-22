@@ -48,7 +48,7 @@ class song extends CI_Controller{
 
     #listartist function
     public function listartist($letter){
-        $data['artist'] = $this->model_song->GetListArtist($letter);
+        $data['song'] = $this->model_song->GetListArtist($letter);
 		$this->load->view('page_header');
 		$this->load->view('page_listartist',$artist);
         $this->load->view('page_footer');
