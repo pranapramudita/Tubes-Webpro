@@ -33,12 +33,12 @@
 
             <!-- Perulangan list album -->
             
-            <?php foreach ($song as $s) { ?>
-            <div id="" class="">album: <b><?php echo $s['album']?></b> </div>
+            <?php foreach ($artist as $a) { ?>
+            <div id="" class="">album: <b><?php echo $a['album']?></b> </div>
             <?php  ?>
             <!-- Perulangan list lagu -->
-            <?php foreach ($song as $s) { ?>
-            <a href="../lyrics/aaronlewis/75.html" target="_blank"><?php echo $s['title']?></a><br>
+            <?php foreach ($artist as $a) { ?>
+            <a href="../lyrics/aaronlewis/75.html" target="_blank"><?php echo $a['title']?></a><br>
             <?php  ?>
             <!-- end -->
             </div>
