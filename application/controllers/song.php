@@ -53,14 +53,8 @@ class Song extends CI_Controller{
 		$this->load->view('page_listartist',$data);
         $this->load->view('page_footer');
     }
-
-    #show lyrics function
-    public function lyrics(){
-        $this->load->view('page_header');
-        $this->load->view('page_footer');
-    }
     
-    #submit lyrics function
+    #lyrics function
     public function submit(){
         // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
         // $this->model_song->insert_lyrics($data);
@@ -88,7 +82,11 @@ class Song extends CI_Controller{
             "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->model_song->insert_lyrics($data);
+        if (isset($_GET['what-cor'])){
+            $this->model_song->update_lyrics($data);
+        } else{
+            $this->model_song->insert_lyrics($data);
+        } 
         redirect('song/submit','refresh');
     }
     
