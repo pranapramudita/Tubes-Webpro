@@ -8,7 +8,7 @@
                     <small>If you want to submit/correct lyrics, please <a href="submit">click here</a></small>
                 </div>
                 <div class="panel-body">
-                    <form action="contact_save" method="post" action="contact_save">
+                    <form action="contact_save" method="post">
                         <div class="form-group">
                             <label for="name">Your name:</label>
                             <input type="text" class="form-control" id="name" name="name" value="">
