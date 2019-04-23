@@ -51,7 +51,7 @@ class Song extends CI_Controller{
     public function lyrics($title){
         $data['title'] = $this->Song_model->getLyrics($title);
         $this->load->view('page_header');
-        // $this->load->view('page_lyric', $data);
+        $this->load->view('page_lyrics', $data);
         $this->load->view('page_footer');
     }   
 
