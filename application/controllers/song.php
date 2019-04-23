@@ -146,6 +146,12 @@ class Song extends CI_Controller{
         redirect('index.php/web/song','refresh');
     }
 
+    public function update(){
+        $this->load->view('page_header');
+        $this->load->view('page_update');
+        $this->load->view('page_footer');
+    }
+
     public function deletesong($id_song){ 
         $this->Song_model->delete_song($id_song);
         redirect('index.php/web/song','refresh');
