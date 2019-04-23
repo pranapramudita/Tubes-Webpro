@@ -54,11 +54,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // $route['tubes-webpro/home'] = 'song/home';
-// // $route['tubes-webpro/[a-z1]'] = 'song/listartist';
-// // $route['tubes-webpro/[a-z1]/listartist'] = 'song/listartist';
-// // $route['tubes-webpro/artist'] = 'song/artist';
+// $route['tubes-webpro/[a-z1]'] = 'song/listartist';
+// $route['tubes-webpro/[a-z1]/listartist'] = 'song/listartist';
+// $route['tubes-webpro/artist'] = 'song/artist';
 // $route['tubes-webpro/search'] = 'song/search';
-// // $route['tubes-webpro/submit'] = 'song/submit';
+// $route['tubes-webpro/submit'] = 'song/submit';
 // $route['tubes-webpro/submit_save'] = 'song/submit_save';
 // $route['tubes-webpro/insert'] = 'song/insert';
 // $route['tubes-webpro/contact'] = 'song/contact';
