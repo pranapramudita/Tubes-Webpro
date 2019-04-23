@@ -1,7 +1,13 @@
 <div class="container main-page">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 20px;">
-        <?php if($song != false){?>
+        <?php if (empty($song)) :?>
+        <div class=" panel">
+          <div class="alert-danger panel-heading" role="alert">
+            Data tidak ditemukan
+          </div>
+          </div>
+        <?php endif;?>
             <div class="panel">
                 <div class="panel-heading"><b>Artist results:</b><br></div>
                
@@ -23,8 +29,7 @@
                 </table>
                
             </div>
-            <?php } ?>
-            <?php if($song != false){?>
+            
             <div class="panel">
                 <div class="panel-heading"><b>Album results:</b><br></div>
                
@@ -45,7 +50,7 @@
                 </table>
                
             </div>
-            <?php } ?>
+            
             
             <div class="panel">
                 <div class="panel-heading"><b>Song results:</b><br></div>
@@ -61,9 +66,10 @@
             </td></tr>
 
             <?php } ?>
+            
             <!-- end -->
 
-                    
+            
                 </table>
             </div>
             

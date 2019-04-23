@@ -55,11 +55,7 @@ class Song_model extends CI_model{
         $this->db->from('song');
         $this->db->where($where);
         $query = $this->db->get();
-        if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }else {
-            return false;
-        }
+        return $query->result_array();
     }
     
     public function insert_lyrics($data){
