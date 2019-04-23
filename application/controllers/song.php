@@ -82,7 +82,6 @@ class Song extends CI_Controller{
             "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->model_song->insert_lyrics($data);
         if (isset($_GET['what-cor'])){
             $this->model_song->update_lyrics($data);
         } else{
