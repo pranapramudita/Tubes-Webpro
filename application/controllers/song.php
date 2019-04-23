@@ -38,10 +38,11 @@ class Song extends CI_Controller{
     }
 
     #artist function
-    public function artist(){
-        // $data['song'] = $this->Song_model->GetArtist($id_song);
+    public function artist($artist){
+        $artist = str_replace('%20', ' ', $artist);
+        $data['song'] = $this->Song_model->GetArtist($artist);
 		$this->load->view('page_header');
-		$this->load->view('page_artist');
+		$this->load->view('page_artist', $data);
         $this->load->view('page_footer');
     }
 
@@ -82,10 +83,14 @@ class Song extends CI_Controller{
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->model_song->insert_lyrics($data);
-        redirect('submit','refresh');
+        if (isset($_GET['what-cor'])){
+            $this->model_song->update_lyrics($data);
+        } else{
+            $this->model_song->insert_lyrics($data);
+        }
+        redirect('song/submit','refresh');
     }
     
-
     #contact function
     public function contact(){
         $this->load->view('page_header');

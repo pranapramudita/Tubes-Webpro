@@ -17,9 +17,9 @@
             <!-- <div class="div-share noprint">
             <div class="fb-like" style="float:left;" data-href="//www.azlyrics.com/a/aaronlewis.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
             </div> -->
-
-            <h1><strong>Aaron Lewis Lyrics</strong></h1>
-
+            <?php foreach ( $song as $a ) : ?>
+            <h1><strong><?= $a['artist']; ?> Lyrics</strong></h1>
+            <?php endforeach; ?>
             <!-- <div class="ringtone">
             <span id="cf_text_top"></span>
             </div> -->
