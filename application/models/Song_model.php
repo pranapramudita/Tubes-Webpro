@@ -35,7 +35,7 @@ class Song_model extends CI_model{
 
     public function GetListArtist($letter){
         if($letter == 1){
-            $query = $this->db->query("SELECT artist FROM song WHERE artist LIKE '$letter%'");
+            $query = $this->db->query("SELECT artist FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");
         }else{
             $query = $this->db->query("SELECT artist FROM song WHERE artist LIKE '$letter%'");
         }
