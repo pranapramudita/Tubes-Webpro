@@ -12,8 +12,8 @@ class Song_model extends CI_model{
         return $query->result();
     }
 
-    public function update_song($id_song,$data){
-        $this->db->where('id_song', $id_song);
+    public function update_song($title,$data){
+        $this->db->where('title', $title);
         $this->db->update('song', $data);
     }
 

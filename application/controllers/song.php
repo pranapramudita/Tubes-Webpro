@@ -83,9 +83,9 @@ class Song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
+            "title" => $this->input->post('title', true),
             "name" => $this->input->post('artist', true),
             "album_name" => $this->input->post('album', true),
-            "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->model_song->insert_lyrics($data);
@@ -156,11 +156,13 @@ class Song extends CI_Controller{
 
     public function updatesong(){
         $data = [
-            // Judul, album, lirik, tahun, penulis pake b ing
-			"title" => $this->input->post('title', true),
+            "title" => $this->input->post('title', true),
+            "name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->model_song->update_song($data['id_song'],$data);
-        redirect('index.php/web/song','refresh');
+        $this->Song_model->update_song($data['title'],$data);
+        redirect('song/home','refresh');
     }
 
     public function deletesong($id_song){ 
