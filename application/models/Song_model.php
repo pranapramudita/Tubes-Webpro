@@ -30,8 +30,12 @@ class Song_model extends CI_model{
     }
 
     public function GetListArtist($letter){
-        $this->db->like('artist', $letter);
-		$query = $this->db->get('song');
+		$query = $this->db->query("SELECT artist FROM song WHERE artist LIKE '$letter%'");
+        return $query->result_array();
+    }
+
+    public function GetListArtistOther(){
+        $query = $this->db->query("SELECT artist FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");
         return $query->result_array();
     }
 

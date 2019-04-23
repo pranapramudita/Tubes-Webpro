@@ -33,40 +33,40 @@
             <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
             <li>
             <div class="btn-group text-center" role="group">
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/a">A</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/b">B</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/c">C</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/d">D</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/e">E</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/f">F</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/g">G</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/h">H</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/i">I</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/j">J</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/k">K</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/l">L</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/m">M</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/n">N</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/o">O</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/p">P</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/q">Q</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/r">R</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/s">S</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/t">T</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/u">U</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/v">V</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/w">W</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/x">X</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/y">Y</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/z">Z</a>
-            <a class="btn btn-menu" href="<?php echo base_url() ?>listartist/1">#</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/a">A</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/b">B</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/c">C</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/d">D</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/e">E</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/f">F</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/g">G</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/h">H</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/i">I</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/j">J</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/k">K</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/l">L</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/m">M</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/n">N</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/o">O</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/p">P</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/q">Q</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/r">R</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/s">S</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/t">T</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/u">U</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/v">V</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/w">W</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/x">X</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/y">Y</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/z">Z</a>
+            <a class="btn btn-menu" href="<?php echo base_url() ?>index.php/song/listartist/1">#</a>
             </div>
             </li>
             </ul>
 
             <div class="collapse navbar-collapse" id="search-collapse">
 
-            <form class="navbar-form navbar-right search" method="post" action="<?php echo base_url() ?>search">
+            <form class="navbar-form navbar-right search" method="post" action="<?php echo base_url() ?>index.php/song/search">
                 <div class="input-group">  
                 <input type="text" class="form-control" placeholder="" name="keyword" id="q">
                     <span class="input-group-btn">

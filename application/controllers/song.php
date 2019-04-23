@@ -48,7 +48,11 @@ class Song extends CI_Controller{
 
     #listartist function
     public function listartist($letter){
-        $data['song'] = $this->Song_model->GetListArtist($letter);
+        if($letter == 1){
+            $data['artist'] = $this->Song_model->GetListArtistOther();
+        }else{
+            $data['artist'] = $this->Song_model->GetListArtist($letter);
+        }
 		$this->load->view('page_header');
 		$this->load->view('page_listartist',$data);
         $this->load->view('page_footer');
@@ -56,19 +60,6 @@ class Song extends CI_Controller{
     
     #lyrics function
     public function submit(){
-        // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
-        // $this->model_song->insert_lyrics($data);
-    //     $this->form_validation->set_rules('id_song','name','required');
-    //     if($this->form_validation->run() == false){
-    //         $this->load->view('page_header');
-    //         $this->load->view('page_submit');
-    //         $this->load->view('page_footer');
-    //     }
-    //     else{
-    //         $this->model_song->insert_lyrics();
-    //         $this->session->set_flashdata('msg', ' added success');
-    //         redirect('home','refresh');
-    //     }
         $this->load->view('page_header');
         $this->load->view('page_submit');
         $this->load->view('page_footer');
@@ -82,11 +73,11 @@ class Song extends CI_Controller{
             "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->model_song->insert_lyrics($data);
+        $this->Song_model->insert_lyrics($data);
         if (isset($_GET['what-cor'])){
-            $this->model_song->update_lyrics($data);
-        } else{
-            $this->model_song->insert_lyrics($data);
+            $this->Song_model->update_lyrics($data);
+        }else{
+            $this->Song_model->insert_lyrics($data);
         }
         redirect('song/submit','refresh');
     }
@@ -106,8 +97,8 @@ class Song extends CI_Controller{
             "subject" => $this->input->post('subj', true),
             "message" => $this->input->post('comments', true),
         ];
-        $this->model_song->insert_contact($data);
-        redirect('song/contact','refresh');
+        $this->Song_model->insert_contact($data);
+        redirect('index.php/song/contact','refresh');
     }
 
     #adv function
@@ -142,7 +133,7 @@ class Song extends CI_Controller{
             // Judul, album, lirik, tahun, penulis pake b ing
 			"title" => $this->input->post('title', true),
         ];
-        $this->model_song->create_song($data);
+        $this->Song_model->create_song($data);
         redirect('index.php/web/song','refresh');
     }
 
@@ -158,12 +149,12 @@ class Song extends CI_Controller{
             // Judul, album, lirik, tahun, penulis pake b ing
 			"title" => $this->input->post('title', true),
         ];
-        $this->model_song->update_song($data['id_song'],$data);
+        $this->Song_model->update_song($data['id_song'],$data);
         redirect('index.php/web/song','refresh');
     }
 
     public function deletesong($id_song){ 
-        $this->model_song->delete_song($id_song);
+        $this->Song_model->delete_song($id_song);
         redirect('index.php/web/song','refresh');
     }
 
