@@ -22,8 +22,8 @@ class Song_model extends CI_model{
         $this->db->delete('song');
     }
 
-    public function getLyrics($title){
-        return $this->db->get_where('song', ['title' => $title])->result_array();
+    public function getLyrics($id){
+        return $this->db->get_where('song', ['id_song' => $id])->result_array();
     }
 
     public function GetArtist($artist){
@@ -36,9 +36,9 @@ class Song_model extends CI_model{
 
     public function GetListArtist($letter){
         if($letter == 1){
-            $query = $this->db->query("SELECT artist FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");
+            $query = $this->db->query("SELECT artist, id_song FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");
         }else{
-            $query = $this->db->query("SELECT artist FROM song WHERE artist LIKE '$letter%'");
+            $query = $this->db->query("SELECT artist, id_song FROM song WHERE artist LIKE '$letter%'");
         }
         return $query->result_array();
     }

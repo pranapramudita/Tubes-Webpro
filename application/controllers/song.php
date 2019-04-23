@@ -6,6 +6,7 @@ class Song extends CI_Controller{
         parent::__construct();
         $this->load->model('Song_model');
         $this->load->library('form_validation');
+        $this->load->helper('url');
     }
     
     #account
@@ -48,9 +49,9 @@ class Song extends CI_Controller{
     }
     
     #listartist function
-    public function lyrics($title){
-        $title = str_replace('%20', ' ', $title);
-        $data['title'] = $this->Song_model->getLyrics($title);
+    public function lyrics($id){
+        $id = str_replace('%20', ' ', $id);
+        $data['title'] = $this->Song_model->getLyrics($id);
         $this->load->view('page_header');
         $this->load->view('page_lyrics', $data);
         $this->load->view('page_footer');
@@ -67,13 +68,13 @@ class Song extends CI_Controller{
     public function submit_save(){
         $data = [
             "title" => $this->input->post('title', true),
-            "name" => $this->input->post('artist', true),
+            "artist" => $this->input->post('artist', true),
             "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
             "image" => $this->input->post('userfile', true),
         ];
         $this->Song_model->insert_lyrics($data);
-        redirect('song/submit','refresh');
+        redirect('index.php/song/submit','refresh');
     }
     
     #upload function
@@ -110,7 +111,7 @@ class Song extends CI_Controller{
             "message" => $this->input->post('comments', true),
         ];
         $this->Song_model->insert_contact($data);
-        redirect('song/contact','refresh');
+        redirect('index.php/song/contact','refresh');
     }
 
     #adv function
@@ -137,16 +138,6 @@ class Song extends CI_Controller{
     #error function
     public function error(){
         $this->load->view('page_error');
-    }
-
-    #CRUD song function
-    public function createsong(){
-        $data = [
-            // Judul, album, lirik, tahun, penulis pake b ing
-			"title" => $this->input->post('title', true),
-        ];
-        $this->Song_model->create_song($data);
-        redirect('index.php/web/song','refresh');
     }
 
     public function readsong(){
@@ -176,7 +167,7 @@ class Song extends CI_Controller{
 
     public function deletesong($id_song){ 
         $this->Song_model->delete_song($id_song);
-        redirect('song/home','refresh');
+        redirect('','refresh');
     }
 
 }
