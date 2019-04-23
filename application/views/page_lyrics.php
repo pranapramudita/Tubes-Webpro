@@ -31,7 +31,7 @@
       <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['title'] ?>"></a><br>
    </div>
       <?php echo $d['lyrics'] ?>
-      <?php endforeach ?>
+<?php endforeach ?>
    </div>
 
 <br><br>
@@ -80,9 +80,9 @@ if  ( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navi
 
 <!-- artist link -->
 <ol class="breadcrumb noprint" itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="//www.azlyrics.com"><span itemprop="name">AZLyrics</span></a></li>
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="//www.azlyrics.com/j.html"><span itemprop="name">J</span></a></li>
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="//www.azlyrics.com/j/joji.html"><span itemprop="name">Joji Lyrics</span></a></li>
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="<?php echo base_url()?>"><span itemprop="name">AZLyrics</span></a></li>
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="<?php echo base_url()?>index.php/song/listartist/<?php echo $d['artist'][0]?>"><span itemprop="name"><?php echo $d['artist'][0]?></span></a></li>
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="<?php echo base_url()?>index.php/song/artist/<?php echo $d['artist']?>"><span itemprop="name"><?php echo $d['artist']?> Lyrics</span></a></li>
 </ol>
 
 <!-- album songlists -->
