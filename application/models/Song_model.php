@@ -22,6 +22,10 @@ class Song_model extends CI_model{
         $this->db->delete('song');
     }
 
+    public function getLyrics($title){
+        return $this->db->get_where('song', ['title' => $title])->result_array();
+    }
+
     public function GetArtist($artist){
         // $this->db->where('artist', $artist);
 		// $query = $this->db->get('song');
