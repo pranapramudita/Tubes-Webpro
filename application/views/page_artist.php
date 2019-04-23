@@ -24,7 +24,7 @@
             <span id="cf_text_top"></span>
             </div> -->
 
-            Related artists:<br>
+            <!-- Related artists:<br> -->
             <!-- <a href="../s/staind.html">Staind</a>
             <br><br> -->
 
@@ -39,7 +39,7 @@
             <?php endforeach; ?>
             <!-- Perulangan list lagu -->
             <?php foreach ( $song as $a ) : ?>
-            <a href="lyrics/<?php echo $a['title']?>" target="_blank"><b><?php echo $a['title'];
+            <a href="index.php/song/lyrics/<?php echo $a['title']?>" target="_blank"><b><?php echo $a['title'];
  ?></b></a> </div>
             <?php endforeach; ?>
             <!-- end -->

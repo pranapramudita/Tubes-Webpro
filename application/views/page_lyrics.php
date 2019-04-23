@@ -8,23 +8,8 @@
 <!-- content -->
 <div class="col-xs-12 col-lg-8 text-center">
 
-<div class="div-share noprint">
-<div class="fb-like" style="float:left;" data-href="https://www.azlyrics.com/lyrics/joji/willhe.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-<!-- AddThis Button BEGIN -->
-<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#username=azlyrics"></script>
-<div class="addthis_toolbox addthis_default_style" style="float:right;">
-<a class="btn btn-xs btn-share addthis_button_email">
-<span class="playblk"><img src="//www.azlyrics.com/images/email.svg" width="56" height="18" class="playblk" alt="Email"></span>
-</a>
-<a class="btn btn-xs btn-share addthis_button_print" style="margin-right: 0px !important;">
-<span class="playblk"><img src="//www.azlyrics.com/images/print.svg" width="56" height="18" class="playblk" alt="Print"></span>
-</a>
-</div>
-</div>
-<!-- AddThis Button END -->
-
-<div class="div-share"><h1>"Will He" lyrics</h1></div>
-
+            
+<div class="div-share"><h1>"Joji" lyrics</h1></div>
 <div class="lyricsh">
 <h2><b>Joji Lyrics</b></h2>
 </div>
