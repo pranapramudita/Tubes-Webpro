@@ -27,9 +27,6 @@ class Song_model extends CI_model{
     }
 
     public function GetArtist($artist){
-        // $this->db->where('artist', $artist);
-		// $query = $this->db->get('song');
-        // return $query->result_array();
         return $this->db->get_where('song', ['artist' => $artist])->result_array();
     }
 

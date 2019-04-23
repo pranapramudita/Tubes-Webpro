@@ -9,7 +9,7 @@
 <div class="col-xs-12 col-lg-8 text-center">
 
             
-<div class="div-share"><h1>"<?php echo $d['artist'] ?>" lyrics</h1></div>
+<!-- <div class="div-share"><h1>"<?php echo $d['artist'] ?>" lyrics</h1></div> -->
 <div class="lyricsh">
 <h2><b><?php echo $d['artist'] ?> Lyrics</b></h2>
 </div>
@@ -30,44 +30,9 @@
       <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['artist'] ?>"></a><br>
       <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['title'] ?>"></a><br>
    </div>
-
-<?php echo $d['lyrics'] ?>
-<?php endforeach ?>
-<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that.
-I got knots all up in my chest (up in my chest, up in my chest)<br>
-Just know, I'm trying my best (I'm trying my best)<br>
-'Cause, when you look (when you look)<br>
-When you laugh (when you laugh)<br>
-When you smile (when you smile)<br>
-I'll bring you back (bring you back)<br>
-And now I'm sad (now I'm sad)<br>
-And I'm a mess (and I'm a mess)<br>
-And now we high (now we high)<br>
-That's, why I left (why I left)<br>
-That's, why I left<br>
-<br>
-Will your tongue still remember the taste of my lips? (my lips, my lips, my lips)<br>
-Will your shadow remember the swing of my hips? (my hips, my hips, my hips)<br>
-Will your lover caress you the way, that I did? (I did, I did, I did)<br>
-Will you notice my charm, if he slips up one bit? (one bit)<br>
-<br>
-'Cause I don't need to know<br>
-I just wanna make sure you're okay (okay)<br>
-I don't need to know<br>
-I just wanna make sure you're all safe<br>
-All safe, all safe<br>
-<br>
-Will he play you those songs, just the way, that I did? (I did, I did, I did)<br>
-Will he play you so strong, just the way, that I did? (I did)<br>
-Yeah, yeah, yeah, yeah<br>
-Will he treat you like shit, just the way, that I did? (I did, I did, I did)<br>
-'Cause I don't blame ya<br>
-<br>
-'Cause I don't need to know<br>
-I just want to make sure you're okay (okay)<br>
-I don't need to know<br>
-I just want to make sure you're all safe -->
-</div>
+      <?php echo $d['lyrics'] ?>
+      <?php endforeach ?>
+   </div>
 
 <br><br>
 
@@ -98,6 +63,9 @@ if  ( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navi
 <div class="smt noprint">
 <a class="btn btn-share" href="<?php echo base_url()?>index.php/song/update/<?php echo $d['id_song']?>" onclick="submitCorrections()"><span class="glyphicon glyphicon-pencil"></span> Submit Corrections</a>
 </div>
+<!-- <div class="smt noprint">
+<a class="btn btn-share" href="<?php echo base_url()?>index.php/song/delete/<?php echo $d['id_song']?>" onclick="submitCorrections()"><span class="glyphicon glyphicon-pencil"></span> Delete Lyrics</a>
+</div> -->
 
 <div class="smt"></div>
 
