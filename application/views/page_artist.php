@@ -29,8 +29,8 @@
             <br><br> -->
 
             <!-- start of song list -->
-            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a>
-            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
+            <!-- <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a>
+            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br> -->
 
             <!-- Perulangan list album -->
 

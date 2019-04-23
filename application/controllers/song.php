@@ -176,7 +176,7 @@ class Song extends CI_Controller{
 
     public function deletesong($id_song){ 
         $this->Song_model->delete_song($id_song);
-        redirect('index.php/web/song','refresh');
+        redirect('song/home','refresh');
     }
 
 }
