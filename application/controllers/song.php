@@ -149,9 +149,9 @@ class Song extends CI_Controller{
 
     public function updatesong($id){
         $data = [
-			"artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
             "title" => $this->input->post('title', true),
+            "artist" => $this->input->post('artist', true),
+            "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->Song_model->update_song($id,$data);
