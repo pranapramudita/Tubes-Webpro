@@ -48,7 +48,7 @@ class Song extends CI_Controller{
 
     #listartist function
     public function listartist($letter){
-        $data['song'] = $this->Song_model->GetListArtist($letter);
+        $data['artist'] = $this->Song_model->GetListArtist($letter);
 		$this->load->view('page_header');
 		$this->load->view('page_listartist',$data);
         $this->load->view('page_footer');
@@ -56,19 +56,6 @@ class Song extends CI_Controller{
     
     #lyrics function
     public function submit(){
-        // INSERT INTO `song`(`id_song`, `id_artist`, `id_album`, `song_title`, `producer`, `lyrics`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
-        // $this->model_song->insert_lyrics($data);
-    //     $this->form_validation->set_rules('id_song','name','required');
-    //     if($this->form_validation->run() == false){
-    //         $this->load->view('page_header');
-    //         $this->load->view('page_submit');
-    //         $this->load->view('page_footer');
-    //     }
-    //     else{
-    //         $this->model_song->insert_lyrics();
-    //         $this->session->set_flashdata('msg', ' added success');
-    //         redirect('home','refresh');
-    //     }
         $this->load->view('page_header');
         $this->load->view('page_submit');
         $this->load->view('page_footer');
