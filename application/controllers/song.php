@@ -76,7 +76,7 @@ class Song extends CI_Controller{
         $data = [
             "title" => $this->input->post('title', true),
             "artist" => $this->input->post('artist', true),
-            "album_name" => $this->input->post('album', true),
+            "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->Song_model->insert_lyrics($data);
@@ -150,11 +150,17 @@ class Song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
+    public function update(){
+        $this->load->view('page_header');
+        $this->load->view('page_update');
+        $this->load->view('page_footer');
+    }
+
     public function updatesong(){
         $data = [
             "title" => $this->input->post('title', true),
             "artist" => $this->input->post('artist', true),
-            "album_name" => $this->input->post('album', true),
+            "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->Song_model->update_song($data['id_song'],$data);

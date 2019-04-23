@@ -11,7 +11,7 @@
 
     <div class="panel">
     <div class="panel-body">
-    <form id="submitLyrics" method="post" action="submit_save">
+    <form id="submitLyrics" method="post" action="updatesong">
       <div class="form-group">
         <label for="title">Song Title:</label>
         <input type="text" class="form-control" id="title" name="title" required>
