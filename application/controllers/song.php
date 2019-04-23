@@ -54,7 +54,7 @@ class Song extends CI_Controller{
         $this->load->view('page_header');
         $this->load->view('page_lyrics', $data);
         $this->load->view('page_footer');
-    }   
+    }
 
     #submit function
     public function submit(){
