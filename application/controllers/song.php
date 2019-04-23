@@ -57,8 +57,14 @@ class Song extends CI_Controller{
 		$this->load->view('page_listartist',$data);
         $this->load->view('page_footer');
     }
+
+    #show lyrics function
+    public function lyrics(){
+        $this->load->view('page_header');
+        $this->load->view('page_footer');
+    }
     
-    #lyrics function
+    #submit lyrics function
     public function submit(){
         $this->load->view('page_header');
         $this->load->view('page_submit');
@@ -70,7 +76,7 @@ class Song extends CI_Controller{
         $data = [
             "title" => $this->input->post('title', true),
             "artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
+            "album_name" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->Song_model->insert_lyrics($data);
@@ -146,8 +152,10 @@ class Song extends CI_Controller{
 
     public function updatesong(){
         $data = [
-            // Judul, album, lirik, tahun, penulis pake b ing
-			"title" => $this->input->post('title', true),
+            "title" => $this->input->post('title', true),
+            "artist" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "lyrics" => $this->input->post('lyrics', true),
         ];
         $this->Song_model->update_song($data['id_song'],$data);
         redirect('index.php/web/song','refresh');
@@ -161,3 +169,4 @@ class Song extends CI_Controller{
 }
 
 ?>
+
