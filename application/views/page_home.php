@@ -5,7 +5,7 @@
             <h1>Welcome to AZLyrics!</h1><br>
                 It's a place where all searches end!<br><br>
                 We have a large, legal, every day growing universe of lyrics where stars of all genres and ages shine.<br><br>
-                <form class="search" method="get" action="<?php echo base_url('song/search')?>">
+                <form class="search" method="post" action="<?php echo base_url('song/search')?>">
                     <div class="input-group">  
                         <input type="text" class="form-control" placeholder="" name="q">
                         <span class="input-group-btn">
