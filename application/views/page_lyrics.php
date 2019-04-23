@@ -132,7 +132,7 @@ EP: <b>"In Tongues"</b> (2017)<br><br>
 
 <!-- album songlists end -->
 
-        <form class="search noprint" method="get" action="//search.azlyrics.com/search.php" role="search">
+        <form class="search noprint" method="get" action="<?php echo base_url('song/search')?>" role="search">
          <div style="margin-bottom:15px" class="input-group">  
 		<input type="text" class="form-control" placeholder="" name="q">
        		<span class="input-group-btn">
