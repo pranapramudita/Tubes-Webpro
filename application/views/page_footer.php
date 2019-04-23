@@ -2,10 +2,10 @@
 <nav class="navbar navbar-default navbar-bottom">
           <div class="container text-center">
           <ul class="nav navbar-nav navbar-center">
-            <li><a href="<?php echo base_url('song/submit') ?>">Submit Lyrics</a></li>
+            <li><a href="<?php echo base_url('index.php/song/submit') ?>">Submit Lyrics</a></li>
             <li><a href="#">Soundtracks</a></li>
             <li><a href="#">Facebook</a></li>
-            <li><a href="<?php echo base_url('song/contact')?>">Contact Us</a></li>
+            <li><a href="<?php echo base_url('index.php/song/contact')?>">Contact Us</a></li>
          </ul>
           </div> 
         </nav>
@@ -25,9 +25,9 @@
 <nav class="navbar navbar-footer">
           <div class="container text-center">
           <ul class="nav navbar-nav navbar-center">
-            <li><a href="<?php echo base_url('song/adv') ?>">Advertise Here</a></li>
-            <li><a href="<?php echo base_url('song/privacy') ?>">Privacy Policy</a></li>
-            <li><a href="<?php echo base_url('song/copyright') ?>">DMCA Policy</a></li>
+            <li><a href="<?php echo base_url('index.php/song/adv') ?>">Advertise Here</a></li>
+            <li><a href="<?php echo base_url('index.php/song/privacy') ?>">Privacy Policy</a></li>
+            <li><a href="<?php echo base_url('index.php/song/copyright') ?>">DMCA Policy</a></li>
           </ul>
           </div> 
      </nav>

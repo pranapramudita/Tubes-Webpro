@@ -49,7 +49,7 @@ This site has security measures in place to protect the loss, misuse, and altera
 <br>
 <b>Contacting the Web Site</b> <br>
 <br>
-If you have any questions about this privacy statement, the practices of this site, or your dealings with this Web site, you can <a href="<?php echo base_url() ?>contact">contact us</a><br>
+If you have any questions about this privacy statement, the practices of this site, or your dealings with this Web site, you can <a href="<?php echo base_url() ?>index.php/song/contact">contact us</a><br>
 <br><br>
 
   </div>

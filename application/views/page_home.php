@@ -5,7 +5,7 @@
             <h1>Welcome to AZLyrics!</h1><br>
                 It's a place where all searches end!<br><br>
                 We have a large, legal, every day growing universe of lyrics where stars of all genres and ages shine.<br><br>
-                <form class="search" method="get" action="<?php echo base_url() ?>search">
+                <form class="search" method="get" action="<?php echo base_url() ?>index.php/song/search">
                     <div class="input-group">  
                         <input type="text" class="form-control" placeholder="" name="q">
                         <span class="input-group-btn">
@@ -29,7 +29,7 @@
     <!-- what's hot placeholder -->
     <div class="row">
         <?php foreach ($song as $sg) :?>
-        <div class="col-xs-3 albuma"><a href="<?php echo base_url(); ?>index.php/song/artist/<?php echo $sg['artist']; ?>"><img src="assets/<?php echo $sg['image'] ?>" alt="" /></a><a href="<?php echo base_url() ?>index.php/artist/<?php echo $sg['artist'] ?>"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
+        <div class="col-xs-3 albuma"><a href="<?php echo base_url(); ?>index.php/song/artist/<?php echo $sg['artist']; ?>"><img src="assets/<?php echo $sg['image'] ?>" alt="" /></a><a href="<?php echo base_url() ?>index.php/song/artist/<?php echo $sg['artist'] ?>"><?php echo $sg['artist'] ?></a>"<?php echo $sg['title'] ?>"</div>
         <?php endforeach ?>
     </div>
     <!-- end of what's hot placeholder -->

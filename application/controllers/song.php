@@ -82,12 +82,8 @@ class Song extends CI_Controller{
             "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        if (isset($_GET['what-cor'])){
-            $this->model_song->update_lyrics($data);
-        } else{
-            $this->model_song->insert_lyrics($data);
-        } 
-        redirect('song/submit','refresh');
+        $this->model_song->insert_lyrics($data);
+        redirect('submit','refresh');
     }
     
     #contact function
