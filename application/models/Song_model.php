@@ -33,6 +33,10 @@ class Song_model extends CI_model{
         return $this->db->get_where('song', ['artist' => $artist])->result_array();
     }
 
+    public function getSongbyid($id){
+        return $this->db->get_where('song', ['id_song' => $id])->result_array();
+    }
+
     public function GetListArtist($letter){
         if($letter == 1){
             $query = $this->db->query("SELECT artist FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");

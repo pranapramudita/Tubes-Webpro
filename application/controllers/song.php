@@ -70,9 +70,28 @@ class Song extends CI_Controller{
             "album_name" => $this->input->post('album', true),
             "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
+            "image" => $this->input->post('userfile', true),
         ];
         $this->Song_model->insert_lyrics($data);
         redirect('submit','refresh');
+    }
+    
+    #upload function
+    public function upload(){
+        $config['upload_path'] = './assets/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size']  = '4096';
+        $config['max_width']  = '1920';
+        $config['max_height']  = '1080';
+        
+        $this->load->library('upload', $config);
+        
+        if (!$this->upload->do_upload()){
+            $error = array('error' => $this->upload->display_errors());
+        }
+        else{
+            $data = array('upload_data' => $this->upload->data());
+        }
     }
     
     #contact function
@@ -139,16 +158,19 @@ class Song extends CI_Controller{
 
     public function updatesong(){
         $data = [
-            // Judul, album, lirik, tahun, penulis pake b ing
-			"title" => $this->input->post('title', true),
+			"name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "title" => $this->input->post('title', true),
+            "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->Song_model->update_song($data['id_song'],$data);
-        redirect('index.php/web/song','refresh');
+        $this->Song_model->update_song($data['title'],$data);
+        redirect('index.php/song/lyrics','refresh');
     }
 
-    public function update(){
+    public function update($id){
+        $data['id'] = $this->Song_model->getSongbyid($id);
         $this->load->view('page_header');
-        $this->load->view('page_update');
+        $this->load->view('page_update',$data);
         $this->load->view('page_footer');
     }
 

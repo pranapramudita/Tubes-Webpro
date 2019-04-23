@@ -96,7 +96,7 @@ if  ( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navi
 </form>
 
 <div class="smt noprint">
-<a class="btn btn-share" href="<?php echo base_url('song/update')?>" onclick="submitCorrections()"><span class="glyphicon glyphicon-pencil"></span> Submit Corrections</a>
+<a class="btn btn-share" href="<?php echo base_url()?>index.php/song/update/<?php echo $d['id_song']?>" onclick="submitCorrections()"><span class="glyphicon glyphicon-pencil"></span> Submit Corrections</a>
 </div>
 
 <div class="smt"></div>
