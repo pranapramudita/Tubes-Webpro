@@ -39,6 +39,7 @@ class Song extends CI_Controller{
 
     #artist function
     public function artist($artist){
+        $artist = str_replace('%20', ' ', $artist);
         $data['song'] = $this->Song_model->GetArtist($artist);
 		$this->load->view('page_header');
 		$this->load->view('page_artist', $data);
