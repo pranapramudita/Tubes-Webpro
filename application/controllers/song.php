@@ -77,9 +77,9 @@ class Song extends CI_Controller{
     #submit_save function
     public function submit_save(){
         $data = [
-            "title" => $this->input->post('title', true),
-            "artist" => $this->input->post('artist', true),
-            "album" => $this->input->post('album', true),
+            "name" => $this->input->post('artist', true),
+            "album_name" => $this->input->post('album', true),
+            "song_title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
         if (isset($_GET['what-cor'])){
@@ -106,7 +106,7 @@ class Song extends CI_Controller{
             "message" => $this->input->post('comments', true),
         ];
         $this->model_song->insert_contact($data);
-        redirect('song/contact','refresh');
+        redirect('contact','refresh');
     }
 
     #adv function
@@ -169,3 +169,4 @@ class Song extends CI_Controller{
 }
 
 ?>
+
