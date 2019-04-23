@@ -72,7 +72,7 @@
                     <span class="input-group-btn">
                         <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
                     </span>
-            </div>   
+                </div>
             </form>
 
             </div><!-- /.navbar-collapse -->

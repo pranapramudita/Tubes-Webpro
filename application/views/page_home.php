@@ -5,14 +5,14 @@
             <h1>Welcome to AZLyrics!</h1><br>
                 It's a place where all searches end!<br><br>
                 We have a large, legal, every day growing universe of lyrics where stars of all genres and ages shine.<br><br>
-                <form class="search" method="get" action="<?php echo base_url()?>index.php/song/search">
-                    <div class="input-group">  
-                        <input type="text" class="form-control" placeholder="" name="q">
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                        </span>
-                    </div>
-	            </form>
+                <form class="search" method="post" action="<?php echo base_url() ?>index.php/song/search">
+                <div class="input-group">  
+                <input type="text" class="form-control" placeholder="" name="keyword" id="q">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
+                    </span>
+                </div>
+            </form>
 	            <p class="help-block">Enter artist name or song title</p>
         </div>
         <div class="col-sm-6 col-lg-4 text-center artist-col">
