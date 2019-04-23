@@ -29,13 +29,6 @@ class Song extends CI_Controller{
         $this->load->view('page_search',$data);
         $this->load->view('page_footer');
     }
-    
-    #word function
-    public function word(){
-        $this->load->view('page_header');
-        $this->load->view('page_word');
-        $this->load->view('page_footer');
-    }
 
     #artist function
     public function artist($artist){
@@ -54,7 +47,15 @@ class Song extends CI_Controller{
         $this->load->view('page_footer');
     }
     
-    #lyrics function
+    #listartist function
+    public function lyrics($title){
+        $data['title'] = $this->Song_model->getLyrics($title);
+        $this->load->view('page_header');
+        // $this->load->view('page_lyric', $data);
+        $this->load->view('page_footer');
+    }   
+
+    #submit function
     public function submit(){
         $this->load->view('page_header');
         $this->load->view('page_submit');

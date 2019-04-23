@@ -9,7 +9,7 @@
           </div>
         <?php endif;?>
         <?php foreach ($artist as $a) :?>
-          <a href="<?php base_url() ?>artist/<?php echo $a['artist'] ?>"><?php echo $a['artist'] ?></a><br>
+          <a href="<?php base_url() ?>index.php/song/artist/<?php echo $a['artist'] ?>"><?php echo $a['artist'] ?></a><br>
         <?php endforeach ?>
       </div>
     </div>
