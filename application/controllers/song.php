@@ -88,7 +88,7 @@ class Song extends CI_Controller{
             "album_name" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->model_song->insert_lyrics($data);
+        $this->Song_model->insert_lyrics($data);
         redirect('song/submit','refresh');
     }
     
@@ -107,7 +107,7 @@ class Song extends CI_Controller{
             "subject" => $this->input->post('subj', true),
             "message" => $this->input->post('comments', true),
         ];
-        $this->model_song->insert_contact($data);
+        $this->Song_model->insert_contact($data);
         redirect('song/contact','refresh');
     }
 
