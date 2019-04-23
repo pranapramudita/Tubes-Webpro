@@ -38,10 +38,10 @@ class Song extends CI_Controller{
     }
 
     #artist function
-    public function artist(){
-        // $data['song'] = $this->Song_model->GetArtist($id_song);
+    public function artist($artist){
+        $data['song'] = $this->Song_model->GetArtist($artist);
 		$this->load->view('page_header');
-		$this->load->view('page_artist');
+		$this->load->view('page_artist', $data);
         $this->load->view('page_footer');
     }
 
@@ -85,7 +85,6 @@ class Song extends CI_Controller{
         redirect('song/submit','refresh');
     }
     
-
     #contact function
     public function contact(){
         $this->load->view('page_header');

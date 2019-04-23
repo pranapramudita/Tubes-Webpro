@@ -22,11 +22,11 @@ class Song_model extends CI_model{
         $this->db->delete('song');
     }
 
-    public function GetArtist($id_song){
+    public function GetArtist($artist){
         // $this->db->where('artist', $artist);
 		// $query = $this->db->get('song');
         // return $query->result_array();
-        return $this->db->get_where('song', ['id_song' => $id_song])->result_array();
+        return $this->db->get_where('song', ['artist' => $artist])->result_array();
     }
 
     public function GetListArtist($letter){
