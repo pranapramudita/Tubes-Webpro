@@ -4,11 +4,11 @@
 <div class="col-lg-2 text-center hidden-md hidden-sm hidden-xs noprint">
    <div class="sky-ad"></div>
 </div>
-<?php foreach ($title as $d) :?>
+
 <!-- content -->
 <div class="col-xs-12 col-lg-8 text-center">
 
-            
+<?php foreach ($title as $d) :?>            
 <!-- <div class="div-share"><h1>"<?php echo $d['artist'] ?>" lyrics</h1></div> -->
 <div class="lyricsh">
 <h2><b><?php echo $d['artist'] ?> Lyrics</b></h2>
@@ -87,15 +87,12 @@ if  ( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navi
 
 <!-- album songlists -->
 <div class="panel songlist-panel noprint">
-EP: <b>"In Tongues"</b> (2017)<br><br>
-<a href="willhe.html">Will He</a><br>
-<a href="pills.html">Pills</a><br>
-<a href="demons.html">Demons</a><br>
-<a href="window.html">Window</a><br>
-<a href="bitterfuck.html">Bitter Fuck</a><br>
-<a href="worldstarmoney.html">WORLD$STAR MONEY</a><br>
-<a href="plastictaste.html">Plastic Taste</a><span class="comment">[Deluxe Edition Bonus Track]</span><br>
-<a href="idontwannawastemytime.html">I Don't Wanna Waste My Time</a><span class="comment">[Deluxe Edition Bonus Track]</span><br>
+<?php foreach ($title as $d ) : ?>
+album: <b>"<?php echo $d['album']?>"</b><br><br>
+<?php endforeach; ?>
+<?php foreach ($title as $d ) : ?>
+<a href="<?php echo base_url()?>index.php/song/lyrics/<?php echo $d['id_song']?>"><?php echo $d['title']?></a><br>
+<?php endforeach; ?>
 </div>
 
 <!-- album songlists end -->
