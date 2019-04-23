@@ -42,11 +42,6 @@ class Song_model extends CI_model{
         return $query->result_array();
     }
 
-    public function GetListArtistOther(){
-        $query = $this->db->query("SELECT artist FROM song WHERE artist REGEXP '^[^a-zA-Z].*$'");
-        return $query->result_array();
-    }
-
     public function getSong(){
 		$query = $this->db->get('song');
 		return $query->result_array();
