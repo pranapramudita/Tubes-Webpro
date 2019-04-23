@@ -5,7 +5,7 @@
             <li><a href="<?php echo base_url() ?>submit">Submit Lyrics</a></li>
             <li><a href="#">Soundtracks</a></li>
             <li><a href="#">Facebook</a></li>
-            <li><a href="<?php echo base_url() ?>contact">Contact Us</a></li>
+            <li><a href="<?php echo base_url('song/contact')?>">Contact Us</a></li>
          </ul>
           </div> 
         </nav>
