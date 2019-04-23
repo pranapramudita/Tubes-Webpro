@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 20px;">
         <?php if($song != false){?>
             <div class="panel">
-                <div class="panel-heading"><b>Artist results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Artists</span> found]</small></div>
+                <div class="panel-heading"><b>Artist results:</b><br></div>
                
                 <table class="table table-condensed">
                     
@@ -13,8 +13,8 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist/<?php echo $row['artist']?>" target="_blank"><b><?php echo $row['artist'];
- ?></b></a>
+                    <?= $i++?>. <a href="artist/<?php echo $row['artist']?>"><b><?php echo $row['artist'];
+            ?></b></a>
                 </td>
             </tr>
             <?php } ?>
@@ -26,47 +26,43 @@
             <?php } ?>
             <?php if($song != false){?>
             <div class="panel">
-                <div class="panel-heading"><b>Album results:</b><br><small>[1-1 of 1 total <span class="text-lowercase">Album</span> found]</small></div>
+                <div class="panel-heading"><b>Album results:</b><br></div>
                
                 <table class="table table-condensed">
                     
-            <!-- Perulangan Database -->        
+                  
             <?php
             $i = 1;
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist/<?php echo $row['artist'] ?>" target="_blank"><b><?php echo $row['album'];
- ?></b></a>
+                    <?= $i++?>. <a href="<?php echo base_url() ?>index.php/song/artist/<?php echo $row['artist'] ?>"><b><?php echo $row['artist'];?> - <?php echo $row['album'];?></b></a>
                 </td>
             </tr>
             <?php } ?>
-            <!-- end -->
+            
                     
                 </table>
                
             </div>
             <?php } ?>
-
+            
             <div class="panel">
-                <div class="panel-heading"><b>Song results:</b><br><small>[1-5 of 56 total <span class="text-lowercase">Songs</span> found]</small></div>
+                <div class="panel-heading"><b>Song results:</b><br></div>
                 <table class="table table-condensed">
-                    
-            <!-- Perulangan Database -->
+            <?php 
+            $i = 1;
+            foreach ($song as $row){ ?>
             <tr>
             <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist/<?php echo $row['artist'] ?>" target="_blank"><b><?php echo $row['title'];
- ?></b></a>
-                </td>
-            </tr>
+                <?= $i++?>. <a href="<?php echo base_url() ?>index.php/song/lyrics/<?php echo $row['id_song'] ?>"><b><?php echo $row['title'];?> </b></a>by <b><?php echo $row['artist'];?></b><br>
+                <?php $row['lyrics'] = word_limiter($row['lyrics'], 50); ?>
+                <small><?php echo $row['lyrics'];?></small>
+            </td></tr>
+
+            <?php } ?>
             <!-- end -->
 
-            <tr>
-                <td>
-                    <!-- <a class="btn btn-share" href="more">More Song Results</a> -->
-                </td>
-            </tr>
-            
                     
                 </table>
             </div>

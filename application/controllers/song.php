@@ -7,6 +7,7 @@ class Song extends CI_Controller{
         $this->load->model('Song_model');
         $this->load->library('form_validation');
         $this->load->helper('url');
+        $this->load->helper('text');
     }
     
     #account
