@@ -25,9 +25,9 @@
 <nav class="navbar navbar-footer">
           <div class="container text-center">
           <ul class="nav navbar-nav navbar-center">
-            <li><a href="<?php echo base_url() ?>adv">Advertise Here</a></li>
-            <li><a href="<?php echo base_url() ?>privacy">Privacy Policy</a></li>
-            <li><a href="<?php echo base_url() ?>copyright">DMCA Policy</a></li>
+            <li><a href="<?php echo base_url('song/adv') ?>">Advertise Here</a></li>
+            <li><a href="<?php echo base_url('song/privacy') ?>">Privacy Policy</a></li>
+            <li><a href="<?php echo base_url('song/copyright') ?>">DMCA Policy</a></li>
           </ul>
           </div> 
      </nav>
