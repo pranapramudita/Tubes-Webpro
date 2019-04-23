@@ -4,33 +4,34 @@
 <div class="col-lg-2 text-center hidden-md hidden-sm hidden-xs noprint">
    <div class="sky-ad"></div>
 </div>
-
+<?php foreach ($title as $d) :?>
 <!-- content -->
 <div class="col-xs-12 col-lg-8 text-center">
 
             
-<div class="div-share"><h1>"Joji" lyrics</h1></div>
+<div class="div-share"><h1>"<?php echo $d['artist'] ?>" lyrics</h1></div>
 <div class="lyricsh">
-<h2><b>Joji Lyrics</b></h2>
+<h2><b><?php echo $d['artist'] ?> Lyrics</b></h2>
 </div>
 
 <div class="ringtone">
 <span id="cf_text_top"></span>
 </div>
 
-<b>"Will He"</b><br>
+<b>"<?php echo $d['title'] ?>"</b><br>
 <br>
 
 <div>
-<?php foreach ($data as $d) :?>
+
    <div class="artist">
       <h2 href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['artist'] ?>"><b></b></h2>
    </div>
    <div class="lyrics">
       <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['artist'] ?>"></a><br>
       <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['title'] ?>"></a><br>
-      <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['lyrics'] ?>"></a><br>
    </div>
+
+<?php echo $d['lyrics'] ?>
 <?php endforeach ?>
 <!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that.
 I got knots all up in my chest (up in my chest, up in my chest)<br>

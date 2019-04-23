@@ -49,6 +49,7 @@ class Song extends CI_Controller{
     
     #listartist function
     public function lyrics($title){
+        $title = str_replace('%20', ' ', $title);
         $data['title'] = $this->Song_model->getLyrics($title);
         $this->load->view('page_header');
         $this->load->view('page_lyrics', $data);
