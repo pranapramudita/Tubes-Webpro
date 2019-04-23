@@ -70,7 +70,7 @@ class Song extends CI_Controller{
             "artist" => $this->input->post('artist', true),
             "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
-            // "image" => $this->input->post('userfile', true),
+            "image" => $this->input->post('userfile', true),
         ];
         $this->Song_model->insert_lyrics($data);
         redirect('song/submit','refresh');
@@ -176,7 +176,7 @@ class Song extends CI_Controller{
 
     public function deletesong($id_song){ 
         $this->Song_model->delete_song($id_song);
-        redirect('song/home','refresh');
+        redirect('','refresh');
     }
 
 }
