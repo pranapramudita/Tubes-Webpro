@@ -29,19 +29,20 @@
             <br><br> -->
 
             <!-- start of song list -->
-            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a><a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
+            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showAlbum();"><span class="glyphicon glyphicon-sort-by-order"></span> sort by album</a>
+            <a href="#" class="btn btn-xs btn-default sorting" onclick="return showSong();"><span class="glyphicon glyphicon-sort-by-alphabet"></span> sort by song</a><br>
 
             <!-- Perulangan list album -->
-            
-            <?php foreach ($artist as $a) : ?>
-            <div id="" class="">album: <b><?php echo $a['album']?></b> </div>
-            <?php endforeach ?>
+
+            <?php foreach ( $song as $a ) : ?>
+                <div id="" class="">album: <b><?= $a['album']; ?></b> </div>
+            <?php endforeach; ?>
             <!-- Perulangan list lagu -->
-            <?php foreach ($artist as $a) : ?>
-            <a href="#" target="_blank"><?php echo $a['title']?></a><br>
-            <?php endforeach ?>
+            <?php foreach ( $song as $a ) : ?>
+                <a href="#" target="_blank"><?= $a['title']; ?></a><br> </div>
+            <?php endforeach; ?>
             <!-- end -->
-            </div>
+            <!-- </div> -->
             
             <!-- end of song list -->
 

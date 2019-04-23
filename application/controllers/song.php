@@ -1,10 +1,10 @@
 <?php
 
-class song extends CI_Controller{
+class Song extends CI_Controller{
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('model_song');
+        $this->load->model('Song_model');
         $this->load->library('form_validation');
     }
     
@@ -15,8 +15,8 @@ class song extends CI_Controller{
     );
 
     #menu function
-    public function home(){
-        $data['song']=$this->model_song->getSong();
+    public function index(){
+        $data['song']=$this->Song_model->getSong();
         $this->load->view('page_header');
         $this->load->view('page_home',$data); 
         $this->load->view('page_footer');
@@ -24,7 +24,7 @@ class song extends CI_Controller{
 
     #search function
     public function search(){
-        $data['song']=$this->model_song->SearchSong();
+        $data['song']=$this->Song_model->SearchSong();
         $this->load->view('page_header');
         $this->load->view('page_search',$data);
         $this->load->view('page_footer');
@@ -38,18 +38,18 @@ class song extends CI_Controller{
     }
 
     #artist function
-    public function artist($artist){
-        $data['artist'] = $this->model_song->GetArtist($artist);
+    public function artist(){
+        // $data['song'] = $this->Song_model->GetArtist($id_song);
 		$this->load->view('page_header');
-		$this->load->view('page_artist',$data);
+		$this->load->view('page_artist');
         $this->load->view('page_footer');
     }
 
     #listartist function
     public function listartist($letter){
-        $data['song'] = $this->model_song->GetListArtist($letter);
+        $data['song'] = $this->Song_model->GetListArtist($letter);
 		$this->load->view('page_header');
-		$this->load->view('page_listartist',$artist);
+		$this->load->view('page_listartist',$data);
         $this->load->view('page_footer');
     }
     
@@ -142,7 +142,7 @@ class song extends CI_Controller{
     }
 
     public function readsong(){
-        $data_song = $this->model_song->read_song();
+        $data_song = $this->Song_model->read_song();
         $this->load->view('page_header');
         $this->load->view('page_song',['data'=>$data_song]);
         $this->load->view('page_footer');

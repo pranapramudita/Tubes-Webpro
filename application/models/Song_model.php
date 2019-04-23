@@ -1,5 +1,5 @@
 <?php
-class model_song extends CI_Model{
+class Song_model extends CI_model{
     
     public function create_song($data){
         $this->db->insert('song', $data);
@@ -22,10 +22,11 @@ class model_song extends CI_Model{
         $this->db->delete('song');
     }
 
-    public function GetArtist($artist){
-        $this->db->where('artist', $artist);
-		$query = $this->db->get('song');
-        return $query->result_array();
+    public function GetArtist($id_song){
+        // $this->db->where('artist', $artist);
+		// $query = $this->db->get('song');
+        // return $query->result_array();
+        return $this->db->get_where('song', ['id_song' => $id_song])->result_array();
     }
 
     public function GetListArtist($letter){
