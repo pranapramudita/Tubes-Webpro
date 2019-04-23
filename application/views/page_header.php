@@ -8,11 +8,11 @@
         
         <!-- title, icon, etc.-->
         <title>AZLyrics - Song Lyrics from A to Z</title>
-        <link rel="shortcut icon" href="assets/icon.png">        
+        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/icon.png">        
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/home.css"/>
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/home.css"/>
     </head>
 
     <body>
