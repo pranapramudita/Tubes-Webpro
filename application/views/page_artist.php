@@ -39,8 +39,8 @@
             <?php endforeach; ?>
             <!-- Perulangan list lagu -->
             <?php foreach ( $song as $a ) : ?>
-            <a href="index.php/song/lyrics/<?php echo $a['title']?>" target="_blank"><b><?php echo $a['title'];
- ?></b></a> </div>
+            <a href="<?php echo base_url() ?>index.php/song/lyrics/<?php echo $a['title']?>" target="_blank"><b><?php echo $a['title'];
+            ?></b></a> </div>
             <?php endforeach; ?>
             <!-- end -->
             <!-- </div> -->

@@ -63,7 +63,7 @@
 
             <tr>
                 <td>
-                    <a class="btn btn-share" href="more">More Song Results</a>
+                    <!-- <a class="btn btn-share" href="more">More Song Results</a> -->
                 </td>
             </tr>
             
