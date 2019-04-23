@@ -156,21 +156,21 @@ class Song extends CI_Controller{
         $this->load->view('page_footer');
     }
 
-    public function updatesong(){
+    public function updatesong($id){
         $data = [
-			"name" => $this->input->post('artist', true),
-            "album_name" => $this->input->post('album', true),
+			"artist" => $this->input->post('artist', true),
+            "album" => $this->input->post('album', true),
             "title" => $this->input->post('title', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
-        $this->Song_model->update_song($data['title'],$data);
-        redirect('index.php/song/lyrics','refresh');
+        $this->Song_model->update_song($id,$data);
+        redirect('','refresh');
     }
 
     public function update($id){
         $data['id'] = $this->Song_model->getSongbyid($id);
         $this->load->view('page_header');
-        $this->load->view('page_update',$data);
+        $this->load->view('page_update',$data,$id);
         $this->load->view('page_footer');
     }
 

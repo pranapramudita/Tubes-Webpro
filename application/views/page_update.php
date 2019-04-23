@@ -11,7 +11,7 @@
     <?php foreach ($id as $d) :?>
     <div class="panel">
     <div class="panel-body">
-    <form id="submitLyrics" method="post" action="updatesong">
+    <form id="submitLyrics" method="post" action="<?php echo base_url() ?>index.php/song/updatesong/<?php echo $d['id_song'] ?>">
       <div class="form-group">
         <label for="title">Song Title:</label>
         <input type="text" class="form-control" id="title" name="title" value="<?php echo $d['title'] ?>" required>
@@ -36,13 +36,13 @@
         <label for="lyrics">Album Cover:</label>
         <div class="file-upload ">
           <?php echo form_open_multipart('index.php/song/upload');?>
-          <input class="form-control" type="file" name="userfile" size="20" value="<?php echo $d['image'] ?>" />
+          <input class="form-control" type="file" name="userfile" size="20" />
           <br/><br/>
           <i class="fa fa-arrow-up"></i>
         </div>
         <img id='img-upload'/>
       </div>
-      <button class="btn btn-primary" name="submit" type="submit">Submit Lyrics</button>
+      <button class="btn btn-primary" name="submit" type="submit">Upload Lyrics</button>
     </form>
     </div>
     </div>

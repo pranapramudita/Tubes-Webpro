@@ -12,9 +12,9 @@ class Song_model extends CI_model{
         return $query->result();
     }
 
-    public function update_song($title,$data){
-        $this->db->where('title', $title);
-        $this->db->update('song', $data);
+    public function update_song($id,$data){
+        $this->db->where('id_song', $id);
+        return $this->db->update('song', $data);
     }
 
     public function delete_song($id_song){
