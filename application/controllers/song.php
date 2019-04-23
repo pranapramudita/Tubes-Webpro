@@ -84,7 +84,7 @@ class Song extends CI_Controller{
     public function submit_save(){
         $data = [
             "title" => $this->input->post('title', true),
-            "name" => $this->input->post('artist', true),
+            "artist" => $this->input->post('artist', true),
             "album_name" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
@@ -157,7 +157,7 @@ class Song extends CI_Controller{
     public function updatesong(){
         $data = [
             "title" => $this->input->post('title', true),
-            "name" => $this->input->post('artist', true),
+            "artist" => $this->input->post('artist', true),
             "album_name" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
         ];
