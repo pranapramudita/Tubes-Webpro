@@ -22,7 +22,17 @@
 <br>
 
 <div>
-<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. -->
+<?php foreach ($data as $d) :?>
+   <div class="artist">
+      <h2 href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['artist'] ?>"><b></b></h2>
+   </div>
+   <div class="lyrics">
+      <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['artist'] ?>"></a><br>
+      <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['title'] ?>"></a><br>
+      <a href="<?php base_url() ?>index.php/song/lyrics/<?php echo $d['lyrics'] ?>"></a><br>
+   </div>
+<?php endforeach ?>
+<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that.
 I got knots all up in my chest (up in my chest, up in my chest)<br>
 Just know, I'm trying my best (I'm trying my best)<br>
 'Cause, when you look (when you look)<br>
@@ -55,7 +65,7 @@ Will he treat you like shit, just the way, that I did? (I did, I did, I did)<br>
 'Cause I don't need to know<br>
 I just want to make sure you're okay (okay)<br>
 I don't need to know<br>
-I just want to make sure you're all safe
+I just want to make sure you're all safe -->
 </div>
 
 <br><br>
