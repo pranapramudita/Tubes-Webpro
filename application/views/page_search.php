@@ -6,7 +6,7 @@
           <div class="alert-danger panel-heading" role="alert">
             Data tidak ditemukan
           </div>
-          </div>
+        </div>
         <?php endif;?>
             <div class="panel">
                 <div class="panel-heading"><b>Artist results:</b><br></div>

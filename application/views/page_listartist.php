@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-6 text-center artist-col">
         <?php if (empty($artist)) :?>
-          <div class="text-center artist-col" role="alert">
+          <div class="alert-danger text-center artist-col" role="alert">
             Data tidak ditemukan
           </div>
         <?php endif;?>
