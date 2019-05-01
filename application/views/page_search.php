@@ -19,7 +19,7 @@
              foreach ($song as $row){ ?>
             <tr>
                 <td class="text-left visitedlyr">
-                    <?= $i++?>. <a href="artist/<?php echo $row['artist']?>"><b><?php echo $row['artist'];
+                    <?= $i++?>. <a href="<?php echo base_url() ?>index.php/song/artist/<?php echo $row['artist'] ?>"><b><?php echo $row['artist'];
             ?></b></a>
                 </td>
             </tr>
