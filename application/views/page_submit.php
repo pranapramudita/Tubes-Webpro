@@ -35,7 +35,7 @@
       <div class="form-group">
         <label for="lyrics">Album Cover:</label>
         <div class="file-upload ">
-          <?php echo form_open_multipart('song/upload');?>
+          <?php echo form_open_multipart('index.php/song/upload');?>
           <input class="form-control" type="file" name="userfile" size="20" />
           <br/><br/>
           <i class="fa fa-arrow-up"></i>
