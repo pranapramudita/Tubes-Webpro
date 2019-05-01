@@ -1,9 +1,5 @@
 <?php
 class Song_model extends CI_model{
-    
-    public function create_song($data){
-        $this->db->insert('song', $data);
-    }
 
     public function read_song(){
         $this->db->select('*');
