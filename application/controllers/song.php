@@ -8,6 +8,7 @@ class Song extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('url');
         $this->load->helper('text');
+        $this->load->helper('form','url');
     }
 
     #menu function
@@ -75,18 +76,20 @@ class Song extends CI_Controller{
     #upload function
     public function upload(){
         $config['upload_path'] = './assets/';
-        $config['allowed_types'] = 'gif|jpg|png';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
         $config['max_size']  = '4096';
         $config['max_width']  = '1920';
         $config['max_height']  = '1080';
         
         $this->load->library('upload', $config);
         
-        if (!$this->upload->do_upload()){
+        if (!$this->upload->do_upload('userfile')){
             $error = array('error' => $this->upload->display_errors());
+            $this->load->view('page_submit', $error);
         }
         else{
             $data = array('upload_data' => $this->upload->data());
+            $this->load->view('page_submit', $data);
         }
     }
     

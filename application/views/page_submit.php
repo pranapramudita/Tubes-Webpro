@@ -32,17 +32,18 @@
         <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;" required></textarea>
         <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
       </div>
+      <?php echo form_open_multipart('Song/upload');?>
       <div class="form-group">
         <label for="lyrics">Album Cover:</label>
         <div class="file-upload ">
-          <?php echo form_open_multipart('index.php/song/upload');?>
-          <input class="form-control" type="file" name="userfile" size="20" />
+          
+          <input class="form-control" type="file" name="userfile" />
           <br/><br/>
           <i class="fa fa-arrow-up"></i>
         </div>
         <img id='img-upload'/>
       </div>
-      <button class="btn btn-primary" name="submit" type="submit">Submit Lyrics</button>
+      <button class="btn btn-primary" name="submit" type="submit" value="upload">Submit Lyrics</button>
     </form>
     </div>
     </div>

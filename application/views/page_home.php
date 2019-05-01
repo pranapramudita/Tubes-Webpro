@@ -1,4 +1,6 @@
 <!-- main -->
+
+
 <div class="container main-page">
     <div class="row">
         <div class="col-sm-6 col-lg-4 col-lg-offset-2 text-center artist-col">
