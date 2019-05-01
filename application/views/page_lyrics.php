@@ -97,14 +97,14 @@ album: <b>"<?php echo $d['album']?>"</b><br><br>
 
 <!-- album songlists end -->
 
-        <form class="search noprint" method="get" action="<?php echo base_url('song/search')?>" role="search">
-         <div style="margin-bottom:15px" class="input-group">  
-		<input type="text" class="form-control" placeholder="" name="q">
-       		<span class="input-group-btn">
-            	  <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
-          	</span>
- 	  </div>   
-	</form>
+<form class="search" method="post" action="<?php echo base_url() ?>index.php/song/search/">
+                <div class="input-group">  
+                <input type="text" class="form-control" placeholder="" name="keyword" id="q">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
+                    </span>
+                </div>
+            </form>
 
 <div class="noprint visible-xs-block" style="margin-top:5px;margin-bottom:5px">
 <span id="cf_rect_bottom"></span>
