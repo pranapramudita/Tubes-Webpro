@@ -9,12 +9,6 @@ class Song extends CI_Controller{
         $this->load->helper('url');
         $this->load->helper('text');
     }
-    
-    #account
-    public $data = array(
-        "fullname" => "Prana Pramudita Kusdiananggalih",
-        "username"=> "pranapramudita"
-    );
 
     #menu function
     public function index(){
