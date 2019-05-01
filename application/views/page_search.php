@@ -73,7 +73,7 @@
                 </table>
             </div>
             
-            <form class="search" method="post" action="<?php echo base_url() ?>index.php/song/search">
+            <form class="search" method="post" action="<?php echo base_url() ?>index.php/song/search/">
                 <div class="input-group">  
                 <input type="text" class="form-control" placeholder="" name="keyword" id="q">
                     <span class="input-group-btn">
