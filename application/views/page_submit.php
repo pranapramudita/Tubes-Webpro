@@ -11,6 +11,7 @@
 
     <div class="panel">
     <div class="panel-body">
+    <?php echo form_open_multipart('index.php/song/uploadsubmit');?>
     <form id="submitLyrics" method="post" action="submit_save">
       <div class="form-group">
         <label for="title">Song Title:</label>
@@ -32,18 +33,17 @@
         <textarea class="form-control" id="lyrics" name="lyrics" rows="30" style="resize: none;" required></textarea>
         <small class="form-text text-danger"><?= form_error('lyrics') ?></small>
       </div>
-      <?php echo form_open_multipart('Song/upload');?>
       <div class="form-group">
         <label for="lyrics">Album Cover:</label>
-        <div class="file-upload ">
-          
-          <input class="form-control" type="file" name="userfile" />
+        <div class="file-upload">
+          <input class="form-control" type="file" id="userfile" name="userfile">
           <br/><br/>
           <i class="fa fa-arrow-up"></i>
         </div>
         <img id='img-upload'/>
       </div>
-      <button class="btn btn-primary" name="submit" type="submit" value="upload">Submit Lyrics</button>
+      <!-- <button class="btn btn-primary" name="submit" type="submit" value="upload">Submit Lyrics</button> -->
+      <input class="btn btn-primary" type="submit" value="Submit">
     </form>
     </div>
     </div>

@@ -56,18 +56,25 @@ class Song extends CI_Controller{
     #submit function
     public function submit(){
         $this->load->view('page_header');
-        $this->load->view('page_submit');
+        $this->load->view('page_submit', array('error' => ' ' ));
         $this->load->view('page_footer');
     }
     
+    public function uploadsubmit(){
+        $this->upload();
+        $this->submit_save();
+    }
+
     #submit_save function
     public function submit_save(){
+        $this->load->library('upload');
+        $file = $this->upload->data();
         $data = [
             "title" => $this->input->post('title', true),
             "artist" => $this->input->post('artist', true),
             "album" => $this->input->post('album', true),
             "lyrics" => $this->input->post('lyrics', true),
-            "image" => $this->input->post('userfile', true),
+            "image" => $file['file_name'],
         ];
         $this->Song_model->insert_lyrics($data);
         redirect('index.php/song/submit','refresh');
@@ -85,11 +92,9 @@ class Song extends CI_Controller{
         
         if (!$this->upload->do_upload('userfile')){
             $error = array('error' => $this->upload->display_errors());
-            $this->load->view('page_submit', $error);
         }
         else{
             $data = array('upload_data' => $this->upload->data());
-            $this->load->view('page_submit', $data);
         }
     }
     
