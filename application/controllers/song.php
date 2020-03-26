@@ -56,7 +56,7 @@ class Song extends CI_Controller{
     #submit function
     public function submit(){
         $this->load->view('page_header');
-        $this->load->view('page_submit', array('error' => ' ' ));
+        $this->load->view('page_submit');
         $this->load->view('page_footer');
     }
     
